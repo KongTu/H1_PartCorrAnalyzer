@@ -1,0 +1,15 @@
+Warning in <TVector3::PseudoRapidity>: transvers momentum = 0! return +/- 10e10
+Warning in <H1HelixTrajectory::GetArcLengthAtRadius>: Radius is outside trajectory.
+Warning in <H1TrackFiller::FillFSTFittedTracksDST>: 
+ broken pointer to vertex found, skipping track in 492640 77261
+Warning in <H1TrackFiller::IsCentralPrimaryVertex>: KSFT (FST Track) points to a non-existing vertex in event 492640 177505
+Warning in <H1TrackFiller::FillBSTFittedTracksDST>: 
+ broken pointer to vertex found, skipping track in 492640 177505
+Error in <H1CentralFittedTrack::H1CentralFittedTrack>: Theta = 181.981593, set 1/pt = 3.40282e+38
+Warning in <H1ForwardMuonTrack::H1ForwardMuonTrack>: High momentum muon (p=606.814819), error on momentum changed to 250 pcts
+
+Processed 617794 events
+
+Histograms written to data_highE_07_test_0002-0004.root
+/afs/desy.de/user/z/ztudesy/nfs/h1_analysis/H1_ForwardMultAnalyzer/batch/h1.run:69: no matches found: *.err
+/afs/desy.de/user/z/ztudesy/nfs/h1_analysis/H1_ForwardMultAnalyzer/batch/h1.run:70: no matches found: *.out

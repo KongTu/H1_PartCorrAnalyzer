@@ -1,0 +1,947 @@
+setting up H1 group environment
+Using release: 4.0.25 (latest bug fix release is 4.0.26)
+
+Info in <H1ErrorHandler::H1ErrorHandler>: Using H1ErrorHandler
+<H1ErrorHandler::SetMaxCount> Errors printed 1 times
+H1SteerManager: Searching for file data_highE_07_test_0000-0002.root.steer
+H1SteerManager: File data_highE_07_test_0000-0002.root.steer opened for reading
+
+======== H1SteerManager: Reading from file 'data_highE_07_test_0000-0002.root.steer' =============
+----- H1SteerTree(){
+----- fPath="/pnfs/desy.de/dphep/online/h1/data/oo-4.0/07/";
+----- fFileNames="4.0.6.10dst7.c070000-0002";
+----- fLoadHAT=true;
+----- fLoadMODS=true;
+----- fHatSelection="(fRunType>0)||(fIl1ac[0]>0)||(fIl1ac[1]>0)||(fIl1ac[2]>0)||(fIl1ac[3]>0)||(fIl1ac[61]>0)";
+----- }
+====== H1SteerManager: Accepted values from file 'data_highE_07_test_0000-0002.root.steer' ======
+================================================================
+Steering for H1SteerTree
+================================================================
+fLoadHAT        = Yes
+fLoadMODS       = Yes
+fLoadODS        = No
+fLoadUserTree   = No
+File Path       = /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07/
+Files           = 4.0.6.10dst7.c070000-0002
+fTreeCacheSize  = 1000000
+Hat Selection           = (fRunType>0)||(fIl1ac[0]>0)||(fIl1ac[1]>0)||(fIl1ac[2]>0)||(fIl1ac[3]>0)||(fIl1ac[61]>0)
+================================================================
+======== H1SteerManager: Done reading from file 'data_highE_07_test_0000-0002.root.steer' ========
+
+===> Addfile for file /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07//mods.4.0.6.10dst7.c070000.root of type MODS
+===> Addfile for file /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07//mods.4.0.6.10dst7.c070001.root of type MODS
+===> Addfile for file /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07//mods.4.0.6.10dst7.c070002.root of type MODS
+===> Addfile for file /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07//hat.4.0.6.10dst7.c070000.root of type HAT
+===> Addfile for file /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07//hat.4.0.6.10dst7.c070001.root of type HAT
+===> Addfile for file /pnfs/desy.de/dphep/online/h1/data/oo-4.0/07//hat.4.0.6.10dst7.c070002.root of type HAT
+Consistency checks for list H1TreeEventList
+
+====== H1SteerManager: Using default values for class 'H1SteerOdsEvent'  ======
+  H1SteerOdsEvent bank names:
+HEAD CRME FRME TOFT TOFS CRPE DBPC DMIS DELE DBFC HRDE DTNY DTRY TLV2 DFPS JDTX 
+JDPX GHD  GKI  GTR  GVX  GEVC STR  SVX  SIPA TL23 NSPT FNHT FNCR DPCC DCLH BRSE 
+BRUE DTAG DRP1 DRP2 DRP3 DL5W DTZS CSKH CSHY DFTS Y4TT YECL VTCL VRCE YRCL YRL5 
+DISM JMFI JMXY HDOO TEL1 HEAR FNCE FNCL FRSE FRXT DRME BPCR JTGT JTST CRM2 TLV3 
+TT10 TT20 TT30 TT1T TT2T TT2K TTEV BJKR 
+H1BankEvent uses all 3/4 letter branches in SetBranchAddresses
+H1SteerOdsEvent: Call to cstrec disabled 
+====== H1SteerManager: End of defaults for class 'H1SteerOdsEvent'  ===========
+
+Creating transient ODS tree for chain number 1
+
+Following subtrees exist: 
+Subtree nr 1 ODS (transient)
+Subtree nr 2 MODS with 3 files and cachesize 1000000
+Subtree nr 3 HAT with 3 files and cachesize 1000000
+===> Opening of H1Tree ok ===== Number of Events: 2175039, Run/Evt range 492559, 885 to 492699, 50756
+
+
+===> H1Tree::Open Using HAT selection from H1SteerTree '(fRunType>0)||(fIl1ac[0]>0)||(fIl1ac[1]>0)||(fIl1ac[2]>0)||(fIl1ac[3]>0)||(fIl1ac[61]>0)
+Info in <H1Tree::SelectHat>: Starting selection "(fRunType>0)||(fIl1ac[0]>0)||(fIl1ac[1]>0)||(fIl1ac[2]>0)||(fIl1ac[3]>0)||(fIl1ac[61]>0)" on 2175039 Events (up to 3  files)...
+===> H1Tree::Open Remaining events in the Tree: 599188
+===> H1Tree::Open No Ascii List of Events given in H1SteerTree
+H1HadronicCalibration : initialising H1HadronicCalibration instance
+H1SteerManager: Searching for file H1HadronicCalibration/H1CalibMethodIterative.steer
+H1SteerManager: File /afs/desy.de/group/h1/root/checkout/oo-releases/releases/4.0.25/H1HadronicCalibration/H1CalibMethodIterative.steer opened for reading
+H1SteerManager: Classname set to H1CalibMethodIterativeConst
+H1SteerManager: Searching for file H1HadronicCalibration/H1CalibMethodHighPtJet.steer
+H1SteerManager: File /afs/desy.de/group/h1/root/checkout/oo-releases/releases/4.0.25/H1HadronicCalibration/H1CalibMethodHighPtJet.steer opened for reading
+H1SteerManager: Classname set to H1CalibMethodHighPtJetConst
+
+====== H1SteerManager: Using default values for class 'H1SteerConstants'  ======
+
+================================================================
+Steering for H1SteerConstants
+================================================================
+
+RunPeriod is set to - Not set!
+================================================================
+
+====== H1SteerManager: End of defaults for class 'H1SteerConstants'  ===========
+
+15088 event 492560 39031 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671253 0.000696956
+
+Using run dependent info on file
+  /afs/desy.de/group/h1/root/checkout/oo-releases/releases/4.0.25/share/H1OOSnapshot.root, 
+  which is valid until run 511079.
+
+
+====== H1SteerManager: Using default values for class 'H1SteerDBManager'  ======
+--H1SteerDBManager values: All from snapshot.
+====== H1SteerManager: End of defaults for class 'H1SteerDBManager'  ===========
+
+ivtyp=1 beam spot: 0.304534 0.63997 reconstructed primary vertex: 0.298027 0.646194 7.81442
+number of part cand: 55
+elecCut::elecCut Initialising std. circular cut
+elecCut::elecCut: Initialising deadSpacal and TriggerCells for year 2007 - be aware this is just a copy of 2006-cuts! 
+Implementing an additional circ. cut (before ncuts=1) 
+There are now 3 circ. cuts implemented
+1 Track 0 1 etaLab=0.995098 ptLab=0.798501 phiLab=-2.30776 ptStar=0.774185 etaStar=1.30789 phiStar=-0.947236 ptStar2=0.77518 etaStar2=1.29008 phiStar2=-0.945455 log10(z)=-1.83022 chi2vtx=0.339844 chi2nv=-1
+2 Track 1 1 etaLab=-0.570101 ptLab=0.968264 phiLab=1.94768 ptStar=0.892814 etaStar=2.90399 phiStar=1.35572 ptStar2=0.894924 etaStar2=2.88516 phiStar2=1.34518 log10(z)=-1.07606 chi2vtx=1.45117 chi2nv=-1
+3 Track 2 -1 etaLab=-0.625925 ptLab=1.29729 phiLab=1.49955 ptStar=1.33703 etaStar=2.84611 phiStar=1.81522 ptStar2=1.33379 etaStar2=2.83207 phiStar2=1.80529 log10(z)=-0.92583 chi2vtx=1.54688 chi2nv=-1
+4 Track 3 -1 etaLab=0.21624 ptLab=1.77951 phiLab=2.24307 ptStar=1.65534 etaStar=2.10754 phiStar=0.911772 ptStar2=1.66029 etaStar2=2.08808 phiStar2=0.907928 log10(z)=-1.15381 chi2vtx=0 chi2nv=-1
+5 Track 4 1 etaLab=0.133412 ptLab=0.308007 phiLab=2.02176 ptStar=0.2901 etaStar=2.27715 phiStar=1.1673 ptStar2=0.290764 etaStar2=2.25832 phiStar2=1.16199 log10(z)=-1.83549 chi2vtx=13.0078 chi2nv=-1
+6 Track 5 -1 etaLab=-1.23359 ptLab=0.400909 phiLab=-2.10814 ptStar=0.358367 etaStar=3.60283 phiStar=-1.58687 ptStar2=0.358326 etaStar2=3.58648 phiStar2=-1.56511 log10(z)=-1.16897 chi2vtx=0.914062 chi2nv=-1
+7 Track 6 -1 etaLab=-0.868678 ptLab=1.6543 phiLab=-2.06095 ptStar=1.51878 etaStar=3.20303 phiStar=-1.47573 ptStar2=1.52104 etaStar2=3.18508 phiStar2=-1.46123 log10(z)=-0.71548 chi2vtx=1.26172 chi2nv=-1
+8 Track 7 1 etaLab=-1.25175 ptLab=1.1166 phiLab=-1.13964 ptStar=1.44282 etaStar=3.24443 phiStar=-2.39669 ptStar2=1.42677 etaStar2=3.23915 phiStar2=-2.38627 log10(z)=-0.719781 chi2vtx=1.41602 chi2nv=-1
+9 Track 8 -1 etaLab=1.55122 ptLab=0.179944 phiLab=-1.20293 ptStar=0.183476 etaStar=1.06669 phiStar=-2.05015 ptStar2=0.183322 etaStar2=1.04932 phiStar2=-2.04853 log10(z)=-2.53661 chi2vtx=2.13086 chi2nv=-1
+10 Track 9 -1 etaLab=1.30808 ptLab=0.235801 phiLab=-2.45925 ptStar=0.227746 etaStar=1.2231 phiStar=-0.788366 ptStar2=0.228079 etaStar2=1.20428 phiStar2=-0.786899 log10(z)=-2.38692 chi2vtx=10.7578 chi2nv=-1
+11 Track 10 1 etaLab=1.58722 ptLab=0.418243 phiLab=-1.09297 ptStar=0.424986 etaStar=0.725838 phiStar=-2.14621 ptStar2=0.424697 etaStar2=0.709508 phiStar2=-2.14516 log10(z)=-2.33577 chi2vtx=6.60156 chi2nv=-1
+12 Track 11 1 etaLab=1.34493 ptLab=0.257302 phiLab=-1.95874 ptStar=0.253999 etaStar=1.12802 phiStar=-1.29768 ptStar2=0.254128 etaStar2=1.11021 phiStar2=-1.29587 log10(z)=-2.38135 chi2vtx=14.75 chi2nv=-1
+13 Track 12 1 etaLab=1.32234 ptLab=0.112266 phiLab=-2.11542 ptStar=0.108352 etaStar=1.76082 phiStar=-1.17489 ptStar2=0.108503 etaStar2=1.74149 phiStar2=-1.17157 log10(z)=-2.46911 chi2vtx=13.1328 chi2nv=-1
+14 Track 13 1 etaLab=1.31233 ptLab=0.45911 phiLab=0.874358 ptStar=0.469809 etaStar=0.984024 phiStar=2.22596 ptStar2=0.469351 etaStar2=0.968222 phiStar2=2.22469 log10(z)=-2.18413 chi2vtx=0.589844 chi2nv=-1
+54 Track 14 -4 etaLab=2.32347 ptLab=0.183615 phiLab=1.89296 ptStar=0.1822 etaStar=0.190822 phiStar=1.1955 ptStar2=0.182258 etaStar2=0.169937 phiStar2=1.19469 log10(z)=-2.86128 chi2vtx=28.5241 chi2nv=4.53997
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.731213,-0.197623,-17.251512,17.467491) (P,eta,phi,E)=(17.467491,-2.539930,-0.072231,17.467491)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.731213,-0.197623,-17.251512,17.467491) (P,eta,phi,E)=(17.467491,-2.539930,-0.072231,17.467491)
+ 1 14 0 0 1 0 0 0 0 0
+15089 event 492560 41397 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671202 0.000696964
+ivtyp=4 beam spot: 0.304664 0.639961 reconstructed primary vertex: 0.23894 0.682452 87.203
+number of part cand: 13
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.691671,0.903436,-26.766272,26.916437) (P,eta,phi,E)=(26.916437,-2.939554,0.323826,26.916437)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.691671,0.903436,-26.766272,26.916437) (P,eta,phi,E)=(26.916437,-2.939554,0.323826,26.916437)
+ 0 0 0 0 0 0 0 0 0 0
+15221 event 492560 43992 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671148 0.000696972
+ivtyp=1 beam spot: 0.3048 0.639952 reconstructed primary vertex: 0.300949 0.642723 3.94884
+number of part cand: 7
+ 0 0 0 0 0 0 0 0 0 0
+15276 event 492560 39338 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671248 0.000696957
+ivtyp=1 beam spot: 0.304548 0.639969 reconstructed primary vertex: 0.29351 0.651398 16.3951
+number of part cand: 21
+ 0 0 0 0 0 0 0 0 0 0
+15342 event 492560 39084 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671251 0.000696957
+ivtyp=1 beam spot: 0.304539 0.63997 reconstructed primary vertex: 0.314507 0.627632 -17.8986
+number of part cand: 32
+0 Track 0 -1 etaLab=1.54119 ptLab=0.174888 phiLab=0.939016 ptStar=0.164754 etaStar=1.94481 phiStar=-1.53768 ptStar2=0.165418 etaStar2=1.83608 phiStar2=-1.47529 log10(z)=-1.90404 chi2vtx=3.53516 chi2nv=-1
+1 Track 1 -1 etaLab=1.56028 ptLab=0.166006 phiLab=-1.55805 ptStar=0.158568 etaStar=1.95102 phiStar=1.58734 ptStar2=0.158718 etaStar2=1.84515 phiStar2=1.52428 log10(z)=-1.91757 chi2vtx=2 chi2nv=-1
+2 Track 2 -1 etaLab=0.776308 ptLab=0.292451 phiLab=0.628505 ptStar=0.234772 etaStar=2.58313 phiStar=-1.41927 ptStar2=0.240466 etaStar2=2.45712 phiStar2=-1.30594 log10(z)=-1.47827 chi2vtx=0.289062 chi2nv=-1
+3 Track 3 -1 etaLab=0.48757 ptLab=0.307712 phiLab=-1.74336 ptStar=0.344145 etaStar=2.50814 phiStar=2.04825 ptStar2=0.328652 etaStar2=2.45237 phiStar2=1.94707 log10(z)=-1.34514 chi2vtx=2.98242 chi2nv=-1
+4 Track 4 1 etaLab=0.0583392 ptLab=0.628763 phiLab=-0.410186 ptStar=0.110019 etaStar=4.68443 phiStar=0.76936 ptStar2=0.199504 etaStar2=3.98762 phiStar2=0.393733 log10(z)=-0.895671 chi2vtx=2.90234 chi2nv=-1
+5 Track 5 1 etaLab=0.844133 ptLab=0.226213 phiLab=1.51463 ptStar=0.275638 etaStar=2.197 phiStar=-2.21645 ptStar2=0.263002 etaStar2=2.14164 phiStar2=-2.14967 log10(z)=-1.57578 chi2vtx=2.72266 chi2nv=-1
+6 Track 6 1 etaLab=-0.244342 ptLab=0.18837 phiLab=-1.14007 ptStar=0.193508 etaStar=3.36267 phiStar=2.31951 ptStar2=0.163942 etaStar2=3.42675 phiStar2=2.09708 log10(z)=-1.22426 chi2vtx=0.585938 chi2nv=-1
+7 Track 7 1 etaLab=0.923687 ptLab=0.338822 phiLab=-0.940747 ptStar=0.2441 etaStar=2.51079 phiStar=1.00263 ptStar2=0.259389 etaStar2=2.34797 phiStar2=0.916056 log10(z)=-1.4927 chi2vtx=0.105469 chi2nv=-1
+8 Track 8 -1 etaLab=0.73355 ptLab=1.38794 phiLab=-0.66286 ptStar=0.856545 etaStar=2.73154 phiStar=0.634851 ptStar2=0.952595 etaStar2=2.52364 phiStar2=0.562449 log10(z)=-0.852526 chi2vtx=0.482422 chi2nv=-1
+9 Track 9 3 etaLab=2.53408 ptLab=0.208624 phiLab=-0.856189 ptStar=0.190929 etaStar=0.817572 phiStar=0.628377 ptStar2=0.194286 etaStar2=0.68426 phiStar2=0.615877 log10(z)=-2.3016 chi2vtx=4.9375 chi2nv=-1
+31 Track 10 4 etaLab=2.59303 ptLab=0.161081 phiLab=-0.804846 ptStar=0.145019 etaStar=0.935586 phiStar=0.580835 ptStar2=0.148068 etaStar2=0.792519 phiStar2=0.567374 log10(z)=-2.35753 chi2vtx=3.98862 chi2nv=0.673828
+32 Track 11 4 etaLab=-3.26884 ptLab=0.0517127 phiLab=0.355243 ptStar=1.18924 etaStar=3.11817 phiStar=-3.1155 ptStar2=0.951889 etaStar2=3.23919 phiStar2=-3.109 log10(z)=-0.542132 chi2vtx=16.3511 chi2nv=0.21875
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-4.109847,1.218185,-25.036411,25.400723) (P,eta,phi,E)=(25.400723,-2.465237,2.853436,25.400723)
+reconstructed electron with photons in lab: (x,y,z,t)=(-4.109847,1.218185,-25.036411,25.400723) (P,eta,phi,E)=(25.400723,-2.465237,2.853436,25.400723)
+ 3 9 0 1 2 0 0 0 0 0
+15343 event 492560 39607 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671242 0.000696958
+ivtyp=4 beam spot: 0.304562 0.639968 reconstructed primary vertex: 0.343612 0.615741 -48.4145
+number of part cand: 1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.813297,-3.401126,-27.641977,27.862305) (P,eta,phi,E)=(27.862305,-2.764551,-1.336078,27.862305)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.813297,-3.401126,-27.641977,27.862305) (P,eta,phi,E)=(27.862305,-2.764551,-1.336078,27.862305)
+ 0 0 0 0 0 0 0 0 0 0
+15344 event 492560 41172 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671208 0.000696963
+ivtyp=1 beam spot: 0.30465 0.639962 reconstructed primary vertex: 0.301666 0.640175 0.102554
+number of part cand: 58
+0 Track 0 -2 etaLab=2.14201 ptLab=0.190435 phiLab=0.707422 ptStar=0.192209 etaStar=0.319764 phiStar=1.77652 ptStar2=0.192375 etaStar2=0.354579 phiStar2=1.78061 log10(z)=-2.8192 chi2vtx=0.9375 chi2nv=-1
+1 Track 1 -1 etaLab=-0.0119676 ptLab=0.282783 phiLab=-2.43023 ptStar=0.283983 etaStar=2.31375 phiStar=-1.74736 ptStar2=0.285397 etaStar2=2.33827 phiStar2=-1.77324 log10(z)=-1.8488 chi2vtx=4.66016 chi2nv=-1
+2 Track 2 -1 etaLab=-1.03267 ptLab=1.32283 phiLab=1.55119 ptStar=1.04837 etaStar=3.467 phiStar=1.79918 ptStar2=1.07159 etaStar2=3.47444 phiStar2=1.87884 log10(z)=-0.781731 chi2vtx=0.00976562 chi2nv=-1
+3 Track 3 -1 etaLab=1.0548 ptLab=0.191093 phiLab=0.61389 ptStar=0.199844 etaStar=1.4505 phiStar=1.95562 ptStar2=0.20071 etaStar2=1.47688 phiStar2=1.96613 log10(z)=-2.36666 chi2vtx=0.875 chi2nv=-1
+4 Track 4 -1 etaLab=-1.17526 ptLab=0.638036 phiLab=1.62007 ptStar=0.491265 etaStar=3.64131 phiStar=1.90896 ptStar2=0.509555 etaStar2=3.63411 phiStar2=1.99951 log10(z)=-1.03521 chi2vtx=5.27344 chi2nv=-1
+6 Track 5 1 etaLab=0.247001 ptLab=1.87534 phiLab=1.44126 ptStar=1.68048 etaStar=2.06659 phiStar=1.20567 ptStar2=1.66844 etaStar2=2.10313 phiStar2=1.22504 log10(z)=-1.18496 chi2vtx=5.97266 chi2nv=-1
+7 Track 6 1 etaLab=0.03874 ptLab=0.512759 phiLab=2.12786 ptStar=0.373898 etaStar=2.51384 phiStar=0.424763 ptStar2=0.362954 etaStar2=2.57294 phiStar2=0.438443 log10(z)=-1.64306 chi2vtx=3.74805 chi2nv=-1
+8 Track 7 -1 etaLab=-1.06665 ptLab=0.0936971 phiLab=2.5593 ptStar=0.0119174 etaStar=5.50891 phiStar=-1.71434 ptStar2=0.0150764 etaStar2=5.30326 phiStar2=-2.24319 log10(z)=-1.8383 chi2vtx=7.91406 chi2nv=-1
+9 Track 8 -1 etaLab=-1.02459 ptLab=0.103807 phiLab=-1.27809 ptStar=0.194424 etaStar=2.75961 phiStar=-2.84952 ptStar2=0.202117 etaStar2=2.75027 phiStar2=-2.86095 log10(z)=-1.81983 chi2vtx=0.773438 chi2nv=-1
+10 Track 9 -1 etaLab=-0.0569932 ptLab=0.146386 phiLab=0.754083 ptStar=0.164602 etaStar=2.44254 phiStar=2.05696 ptStar2=0.166978 etaStar2=2.45786 phiStar2=2.08323 log10(z)=-2.02841 chi2vtx=3.05273 chi2nv=-1
+12 Track 10 1 etaLab=1.54989 ptLab=0.137654 phiLab=-0.940484 ptStar=0.14591 etaStar=0.592427 phiStar=-2.92297 ptStar2=0.146581 etaStar2=0.617185 phiStar2=-2.92398 log10(z)=-2.88657 chi2vtx=2.28516 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(4.953204,-4.244628,-15.708706,17.009249) (P,eta,phi,E)=(17.009249,-1.612571,-0.708513,17.009249)
+reconstructed electron with photons in lab: (x,y,z,t)=(4.953204,-4.244628,-15.708706,17.009249) (P,eta,phi,E)=(17.009249,-1.612571,-0.708513,17.009249)
+ 1 10 1 0 0 0 0 0 0 0
+15345 event 492560 40751 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671217 0.000696962
+ivtyp=0 beam spot: 0.304627 0.639964 reconstructed primary vertex: 0.304573 0.64002 0.08
+number of part cand: 12
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.823187,-0.485691,-27.254790,27.404924) (P,eta,phi,E)=(27.404924,-2.948677,-0.170369,27.404924)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.823187,-0.485691,-27.254790,27.404924) (P,eta,phi,E)=(27.404924,-2.948677,-0.170369,27.404924)
+ 0 0 0 0 0 0 0 0 0 0
+15385 event 492560 40125 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.00067123 0.00069696
+ivtyp=1 beam spot: 0.304595 0.639966 reconstructed primary vertex: 0.295952 0.649132 13.1208
+number of part cand: 52
+0 Track 0 -1 etaLab=-0.487931 ptLab=1.11783 phiLab=2.08388 ptStar=1.1416 etaStar=2.53966 phiStar=-1.94797 ptStar2=1.1427 etaStar2=2.55225 phiStar2=-1.9504 log10(z)=-1.20547 chi2vtx=0.0742188 chi2nv=-1
+1 Track 1 1 etaLab=0.11582 ptLab=0.348731 phiLab=0.425461 ptStar=0.336242 etaStar=2.06914 phiStar=-0.240374 ptStar2=0.335706 etaStar2=2.08435 phiStar2=-0.240765 log10(z)=-1.93955 chi2vtx=9.27344 chi2nv=-1
+2 Track 2 1 etaLab=-0.579693 ptLab=1.17938 phiLab=2.39308 ptStar=1.22841 etaStar=2.61085 phiStar=-2.25223 ptStar2=1.23059 etaStar2=2.62263 phiStar2=-2.25441 log10(z)=-1.14274 chi2vtx=0.378906 chi2nv=-1
+3 Track 3 1 etaLab=-0.925632 ptLab=0.513589 phiLab=2.0943 ptStar=0.53182 etaStar=2.96908 phiStar=-1.98924 ptStar2=0.532693 etaStar2=2.98099 phiStar2=-1.99291 log10(z)=-1.35069 chi2vtx=15.7812 chi2nv=-1
+4 Track 4 -1 etaLab=0.301981 ptLab=0.531706 phiLab=-2.89179 ptStar=0.547309 etaStar=1.77886 phiStar=3.08724 ptStar2=0.547979 etaStar2=1.79123 phiStar2=3.08731 log10(z)=-1.85442 chi2vtx=0.3125 chi2nv=-1
+5 Track 5 1 etaLab=-0.572413 ptLab=0.343528 phiLab=-0.354338 ptStar=0.323215 etaStar=2.7392 phiStar=0.58704 ptStar2=0.322355 etaStar2=2.75544 phiStar2=0.588817 log10(z)=-1.66654 chi2vtx=0.501953 chi2nv=-1
+6 Track 6 -1 etaLab=-0.339643 ptLab=0.863765 phiLab=-1.23812 ptStar=0.858558 etaStar=2.4228 phiStar=1.48576 ptStar2=0.85839 etaStar2=2.43655 phiStar2=1.48808 log10(z)=-1.37992 chi2vtx=12.9531 chi2nv=-1
+7 Track 7 1 etaLab=-0.736371 ptLab=0.484724 phiLab=2.53423 ptStar=0.512728 etaStar=2.76369 phiStar=-2.39522 ptStar2=0.513963 etaStar2=2.77485 phiStar2=-2.39744 log10(z)=-1.45572 chi2vtx=0.480469 chi2nv=-1
+8 Track 8 1 etaLab=-0.523299 ptLab=0.226834 phiLab=0.279444 ptStar=0.210977 etaStar=2.75074 phiStar=-0.0920376 ptStar2=0.210296 etaStar2=2.76757 phiStar2=-0.0923363 log10(z)=-1.84635 chi2vtx=0.822266 chi2nv=-1
+9 Track 9 1 etaLab=0.73715 ptLab=0.205943 phiLab=1.29765 ptStar=0.203711 etaStar=1.62607 phiStar=-1.12602 ptStar2=0.203618 etaStar2=1.64052 phiStar2=-1.12698 log10(z)=-2.34337 chi2vtx=3.74219 chi2nv=-1
+10 Track 10 1 etaLab=-0.0460191 ptLab=0.256103 phiLab=-2.75373 ptStar=0.267461 etaStar=2.19235 phiStar=2.95593 ptStar2=0.267949 etaStar2=2.20417 phiStar2=2.95627 log10(z)=-1.98515 chi2vtx=17.375 chi2nv=-1
+11 Track 11 1 etaLab=0.798219 ptLab=0.354227 phiLab=-2.39038 ptStar=0.360049 etaStar=1.36405 phiStar=2.59428 ptStar2=0.3603 etaStar2=1.37713 phiStar2=2.59471 log10(z)=-2.21327 chi2vtx=2.01953 chi2nv=-1
+12 Track 12 -1 etaLab=0.924909 ptLab=0.139352 phiLab=-0.0206928 ptStar=0.135687 etaStar=1.71744 phiStar=0.220439 ptStar2=0.13553 etaStar2=1.73298 phiStar2=0.220699 log10(z)=-2.47387 chi2vtx=1.10352 chi2nv=-1
+13 Track 13 -1 etaLab=1.12626 ptLab=0.145336 phiLab=-2.15154 ptStar=0.147585 etaStar=1.45898 phiStar=2.36085 ptStar2=0.147682 etaStar2=1.47299 phiStar2=2.3615 log10(z)=-2.54461 chi2vtx=0.789062 chi2nv=-1
+14 Track 14 -1 etaLab=1.21766 ptLab=0.860251 phiLab=-1.80266 ptStar=0.864398 etaStar=0.866123 phiStar=2.00698 ptStar2=0.864578 etaStar2=0.879554 phiStar2=2.00743 log10(z)=-2.05143 chi2vtx=0.0996094 chi2nv=-1
+15 Track 15 -1 etaLab=1.28594 ptLab=0.471795 phiLab=1.09076 ptStar=0.468465 etaStar=0.854145 phiStar=-0.905857 ptStar2=0.468323 etaStar2=0.868304 phiStar2=-0.906244 log10(z)=-2.31855 chi2vtx=16.3594 chi2nv=-1
+16 Track 16 -1 etaLab=1.42108 ptLab=0.261639 phiLab=-1.69208 ptStar=0.262598 etaStar=0.836858 phiStar=1.89695 ptStar2=0.26264 etaStar2=0.851224 phiStar2=1.89742 log10(z)=-2.56494 chi2vtx=0.177734 chi2nv=-1
+17 Track 17 -1 etaLab=1.49185 ptLab=0.462626 phiLab=-0.945848 ptStar=0.460843 etaStar=0.644061 phiStar=1.14819 ptStar2=0.460767 etaStar2=0.658186 phiStar2=1.14856 log10(z)=-2.41432 chi2vtx=7.56641 chi2nv=-1
+18 Track 18 -1 etaLab=1.31567 ptLab=0.079497 phiLab=2.42678 ptStar=0.0812587 etaStar=1.91705 phiStar=-2.26026 ptStar2=0.0813357 etaStar2=1.9312 phiStar2=-2.26141 log10(z)=-2.59864 chi2vtx=7.36328 chi2nv=-1
+19 Track 19 1 etaLab=1.52906 ptLab=0.100464 phiLab=0.816609 ptStar=0.0986456 etaStar=1.46674 phiStar=-0.63605 ptStar2=0.098568 etaStar2=1.48344 phiStar2=-0.636632 log10(z)=-2.69631 chi2vtx=1.34961 chi2nv=-1
+20 Track 20 3 etaLab=2.56939 ptLab=1.67261 phiLab=-2.40799 ptStar=1.67682 etaStar=-0.501443 phiStar=2.60335 ptStar2=1.67701 etaStar2=-0.487962 phiStar2=2.60341 log10(z)=-2.35706 chi2vtx=4.47656 chi2nv=-1
+51 Track 21 4 etaLab=2.27177 ptLab=0.273172 phiLab=-2.15023 ptStar=0.274116 etaStar=-0.103935 phiStar=2.34761 ptStar2=0.274156 etaStar2=-0.088873 phiStar2=2.34776 log10(z)=-2.91823 chi2vtx=17.7882 chi2nv=7.44922
+52 Track 22 4 etaLab=2.30181 ptLab=0.580239 phiLab=0.463046 ptStar=0.577986 etaStar=-0.207686 phiStar=-0.270264 ptStar2=0.577889 etaStar2=-0.1936 phiStar2=-0.27031 log10(z)=-2.67946 chi2vtx=5.1169 chi2nv=0.539062
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-1.096705,-0.215308,-12.912225,12.960505) (P,eta,phi,E)=(12.960505,-3.141970,-2.947736,12.960505)
+reconstructed electron with photons in lab: (x,y,z,t)=(-1.096705,-0.215308,-12.912225,12.960505) (P,eta,phi,E)=(12.960505,-3.141970,-2.947736,12.960505)
+ 0 20 0 1 2 0 0 0 0 0
+15400 event 492560 40494 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000671222 0.000696961
+ivtyp=1 beam spot: 0.304613 0.639965 reconstructed primary vertex: 0.302475 0.638184 -2.43375
+number of part cand: 14
+0 Track 0 -1 etaLab=-0.0702401 ptLab=1.42926 phiLab=1.62093 ptStar=0.939421 etaStar=3.59215 phiStar=-1.47757 ptStar2=1.21062 etaStar2=3.64077 phiStar2=-2.25865 log10(z)=-0.385649 chi2vtx=0.230469 chi2nv=-1
+1 Track 1 1 etaLab=1.17055 ptLab=0.23314 phiLab=-0.0470283 ptStar=0.199756 etaStar=3.51017 phiStar=1.88049 ptStar2=0.298095 etaStar2=3.41455 phiStar2=2.4494 log10(z)=-1.09127 chi2vtx=2.86133 chi2nv=-1
+2 Track 2 -1 etaLab=1.58456 ptLab=0.352532 phiLab=0.0655762 ptStar=0.319352 etaStar=1.74593 phiStar=0.96744 ptStar2=0.295601 etaStar2=2.12795 phiStar2=1.09646 log10(z)=-1.65362 chi2vtx=1.67188 chi2nv=-1
+13 Track 3 -4 etaLab=2.39157 ptLab=0.190795 phiLab=-0.113483 ptStar=0.182396 etaStar=1.12348 phiStar=1.10151 ptStar2=0.176187 etaStar2=1.48293 phiStar2=1.17665 log10(z)=-2.14703 chi2vtx=9.66724 chi2nv=2.44173
+14 Track 4 -4 etaLab=2.76851 ptLab=1.67446 phiLab=1.13067 ptStar=1.60798 etaStar=0.374348 phiStar=-0.232553 ptStar2=1.55081 etaStar2=0.713639 phiStar2=-0.241293 log10(z)=-1.54864 chi2vtx=9.9682 chi2nv=0.353772
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-1.486221,-1.902043,-25.683071,25.796255) (P,eta,phi,E)=(25.796255,-3.059962,-2.234081,25.796255)
+reconstructed electron with photons in lab: (x,y,z,t)=(-1.486221,-1.902043,-25.683071,25.796255) (P,eta,phi,E)=(25.796255,-3.059962,-2.234081,25.796255)
+ 0 3 0 0 2 0 0 0 0 0
+20000 event 492561 20416 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.00067078 0.000697025
+ivtyp=1 beam spot: 0.305627 0.639891 reconstructed primary vertex: 0.314659 0.628922 -15.6415
+number of part cand: 30
+0 Track 0 2 etaLab=2.17609 ptLab=0.202812 phiLab=0.569799 ptStar=0.17948 etaStar=1.35669 phiStar=0.115174 ptStar2=0.180562 etaStar2=1.32631 phiStar2=0.114481 log10(z)=-2.07421 chi2vtx=0.232422 chi2nv=-1
+1 Track 1 -1 etaLab=1.80627 ptLab=0.644622 phiLab=-1.30772 ptStar=0.678939 etaStar=1.24781 phiStar=2.08376 ptStar2=0.677191 etaStar2=1.22743 phiStar2=2.07916 log10(z)=-1.5578 chi2vtx=0.0078125 chi2nv=-1
+3 Track 2 -1 etaLab=0.18426 ptLab=1.73839 phiLab=0.00402025 ptStar=1.13328 etaStar=3.31192 phiStar=1.25238 ptStar2=1.14882 etaStar2=3.27548 phiStar2=1.21361 log10(z)=-0.440253 chi2vtx=14.5312 chi2nv=-1
+4 Track 3 1 etaLab=0.216469 ptLab=0.474008 phiLab=0.424758 ptStar=0.214219 etaStar=3.69233 phiStar=0.571417 ptStar2=0.225235 etaStar2=3.61935 phiStar2=0.540275 log10(z)=-0.998418 chi2vtx=2.44336 chi2nv=-1
+5 Track 4 1 etaLab=-0.251413 ptLab=0.752614 phiLab=-0.813387 ptStar=0.971628 etaStar=3.07329 phiStar=2.26001 ptStar2=0.951807 etaStar2=3.07108 phiStar2=2.23434 log10(z)=-0.610716 chi2vtx=0.03125 chi2nv=-1
+6 Track 5 1 etaLab=0.5105 ptLab=0.19057 phiLab=-0.998245 ptStar=0.228318 etaStar=2.67914 phiStar=2.16146 ptStar2=0.225558 etaStar2=2.66841 phiStar2=2.14295 log10(z)=-1.41011 chi2vtx=3.05664 chi2nv=-1
+7 Track 6 -1 etaLab=-0.120458 ptLab=0.147073 phiLab=-1.89972 ptStar=0.28898 etaStar=2.79688 phiStar=2.86329 ptStar2=0.282113 etaStar2=2.79807 phiStar2=2.85633 log10(z)=-1.25704 chi2vtx=12.0859 chi2nv=-1
+9 Track 7 3 etaLab=2.21398 ptLab=0.189637 phiLab=2.44422 ptStar=0.195269 etaStar=1.20829 phiStar=-1.88364 ptStar2=0.194956 etaStar2=1.18534 phiStar2=-1.87864 log10(z)=-2.10037 chi2vtx=3.62891 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-2.179487,-1.732656,-25.535489,25.686834) (P,eta,phi,E)=(25.686834,-2.912183,-2.469918,25.686834)
+reconstructed electron with photons in lab: (x,y,z,t)=(-2.179487,-1.732656,-25.535489,25.686834) (P,eta,phi,E)=(25.686834,-2.912183,-2.469918,25.686834)
+ 2 6 1 1 0 0 0 0 0 0
+30000 event 492561 164910 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.000668501 0.000697355
+ivtyp=1 beam spot: 0.308203 0.639575 reconstructed primary vertex: 0.313712 0.63202 -10.8951
+number of part cand: 5
+ 0 0 0 0 0 0 0 0 0 0
+40000 event 492561 261070 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.000666953 0.000697579
+ivtyp=1 beam spot: 0.308918 0.639414 reconstructed primary vertex: 0.314108 0.634303 -7.01593
+number of part cand: 38
+0 Track 0 -1 etaLab=1.68641 ptLab=0.235522 phiLab=-1.54392 ptStar=0.237216 etaStar=0.885803 phiStar=-1.7641 ptStar2=0.237438 etaStar2=0.933673 phiStar2=-1.76882 log10(z)=-2.46894 chi2vtx=0.164062 chi2nv=-1
+1 Track 1 -1 etaLab=-0.597016 ptLab=0.86604 phiLab=2.94752 ptStar=0.599267 etaStar=3.30816 phiStar=0.0993785 ptStar2=0.568448 etaStar2=3.40615 phiStar2=0.104786 log10(z)=-1.03492 chi2vtx=1.03125 chi2nv=-1
+2 Track 2 1 etaLab=-1.17594 ptLab=0.487432 phiLab=-2.05027 ptStar=0.468011 etaStar=3.56058 phiStar=-1.78626 ptStar2=0.475643 etaStar2=3.5896 phiStar2=-1.85026 log10(z)=-1.03266 chi2vtx=1.23828 chi2nv=-1
+3 Track 3 1 etaLab=1.59201 ptLab=0.471815 phiLab=1.83669 ptStar=0.465387 etaStar=0.824928 phiStar=1.2145 ptStar2=0.464681 etaStar2=0.872677 phiStar2=1.21861 log10(z)=-2.21703 chi2vtx=0.177734 chi2nv=-1
+4 Track 4 1 etaLab=-1.63788 ptLab=0.452833 phiLab=-0.899472 ptStar=0.78572 etaStar=3.42721 phiStar=-2.72691 ptStar2=0.8278 etaStar2=3.42023 phiStar2=-2.74918 log10(z)=-0.865586 chi2vtx=3.86914 chi2nv=-1
+5 Track 5 -1 etaLab=-1.93758 ptLab=0.394138 phiLab=-1.35163 ptStar=0.702902 etaStar=3.69858 phiStar=-2.58561 ptStar2=0.749041 etaStar2=3.68019 phiStar2=-2.62345 log10(z)=-0.796111 chi2vtx=0.976562 chi2nv=-1
+6 Track 6 -3 etaLab=2.64844 ptLab=0.0757602 phiLab=2.78187 ptStar=0.0719545 etaStar=0.846989 phiStar=0.24701 ptStar2=0.0715149 etaStar2=0.929208 phiStar2=0.24856 log10(z)=-2.86941 chi2vtx=0.604492 chi2nv=-1
+7 Track 7 -3 etaLab=2.21855 ptLab=0.811935 phiLab=2.65572 ptStar=0.79757 etaStar=0.152258 phiStar=0.367305 ptStar2=0.79591 etaStar2=0.200171 phiStar2=0.368108 log10(z)=-2.27582 chi2vtx=2.67383 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.878222,-0.362722,-18.923933,19.144999) (P,eta,phi,E)=(19.144999,-2.574347,-0.125362,19.144999)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.878222,-0.362722,-18.923933,19.144999) (P,eta,phi,E)=(19.144999,-2.574347,-0.125362,19.144999)
+ 0 6 0 2 0 0 0 0 0 0
+50000 event 492564 75488 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000664268 0.000697967
+ivtyp=1 beam spot: 0.310692 0.639227 reconstructed primary vertex: 0.314964 0.630341 -12.9688
+number of part cand: 37
+0 Track 0 -1 etaLab=2.00329 ptLab=0.139163 phiLab=2.35307 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.0979874 etaStar2=2.41515 phiStar2=-0.49381 log10(z)=nan chi2vtx=1.98828 chi2nv=-1
+1 Track 1 1 etaLab=1.74077 ptLab=0.189601 phiLab=-0.122254 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.228299 etaStar2=1.88715 phiStar2=2.36373 log10(z)=nan chi2vtx=1.60156 chi2nv=-1
+2 Track 2 1 etaLab=1.70428 ptLab=0.360803 phiLab=1.29788 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.298038 etaStar2=2.02245 phiStar2=0.916726 log10(z)=nan chi2vtx=0.251953 chi2nv=-1
+4 Track 3 -1 etaLab=-1.09593 ptLab=0.146963 phiLab=0.821926 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.541507 etaStar2=3.27721 phiStar2=2.8868 log10(z)=nan chi2vtx=1.64062 chi2nv=-1
+5 Track 4 -1 etaLab=1.706 ptLab=0.639042 phiLab=2.90581 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.558582 etaStar2=1.87689 phiStar2=-1.09991 log10(z)=nan chi2vtx=1.58203 chi2nv=-1
+6 Track 5 1 etaLab=1.74413 ptLab=0.498928 phiLab=1.61648 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.396351 etaStar2=1.96133 phiStar2=0.507436 log10(z)=nan chi2vtx=0.792969 chi2nv=-1
+7 Track 6 1 etaLab=-1.10758 ptLab=0.0996461 phiLab=1.11528 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.373486 etaStar2=3.34585 phiStar2=2.93147 log10(z)=nan chi2vtx=7.60547 chi2nv=-1
+8 Track 7 -1 etaLab=1.93577 ptLab=0.221542 phiLab=0.214563 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=0.239464 etaStar2=1.70674 phiStar2=2.01876 log10(z)=nan chi2vtx=3.08008 chi2nv=-1
+36 Track 8 4 etaLab=2.87609 ptLab=2.99124 phiLab=1.48316 ptStar=-nan etaStar=-1e+11 phiStar=-nan ptStar2=2.81625 etaStar2=0.590446 phiStar2=0.566428 log10(z)=nan chi2vtx=4.16344 chi2nv=6.99857
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.076072,-2.273867,-27.833156,27.946610) (P,eta,phi,E)=(27.946609,-3.098887,-1.128790,27.946610)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.076072,-2.273867,-27.833156,27.946610) (P,eta,phi,E)=(27.946609,-3.098887,-1.128790,27.946610)
+ 1 8 0 0 1 0 0 0 0 0
+60000 event 492564 211100 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000662021 0.000698293
+ivtyp=1 beam spot: 0.314285 0.639145 reconstructed primary vertex: 0.306587 0.64547 9.46765
+number of part cand: 50
+ 0 0 0 0 0 0 0 0 0 0
+70000 event 492565 25276 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000659803 0.000698614
+ivtyp=1 beam spot: 0.319236 0.639117 reconstructed primary vertex: 0.333591 0.624167 -21.9027
+number of part cand: 36
+0 Track 0 -1 etaLab=1.11843 ptLab=1.79287 phiLab=-3.01267 ptStar=1.71091 etaStar=1.91873 phiStar=-1.49486 ptStar2=1.70604 etaStar2=2.06302 phiStar2=-1.57938 log10(z)=-0.900771 chi2vtx=2.14453 chi2nv=-1
+1 Track 1 1 etaLab=1.24704 ptLab=2.11351 phiLab=-2.78655 ptStar=2.12085 etaStar=1.73842 phiStar=-1.69075 ptStar2=2.14389 etaStar2=1.86906 phiStar2=-1.76005 log10(z)=-0.885797 chi2vtx=0.78125 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.433504,-3.032941,-25.155778,25.378471) (P,eta,phi,E)=(25.378471,-2.712304,-1.129271,25.378471)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.433504,-3.032941,-25.155778,25.378471) (P,eta,phi,E)=(25.378471,-2.712304,-1.129271,25.378471)
+ 0 2 0 0 0 0 0 0 0 0
+80000 event 492565 159851 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000657761 0.000698909
+ivtyp=1 beam spot: 0.318081 0.639128 reconstructed primary vertex: 0.317025 0.640193 1.36177
+number of part cand: 44
+0 Track 0 1 etaLab=-1.94375 ptLab=0.66052 phiLab=0.837082 ptStar=29.7748 etaStar=1.83356 phiStar=3.14113 ptStar2=6.49685 etaStar2=2.58234 phiStar2=3.13947 log10(z)=0.62275 chi2vtx=7.95312 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(4.753872,5.056280,-26.616159,27.506094) (P,eta,phi,E)=(27.506094,-2.053926,0.816214,27.506094)
+reconstructed electron with photons in lab: (x,y,z,t)=(4.753872,5.056280,-26.616159,27.506094) (P,eta,phi,E)=(27.506094,-2.053926,0.816214,27.506094)
+ 0 1 0 0 0 0 0 0 0 0
+90000 event 492567 80122 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000655279 0.000699268
+ivtyp=4 beam spot: 0.319757 0.639174 reconstructed primary vertex: 0.320854 0.635155 -3.04178
+number of part cand: 9
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-0.948701,-3.737567,-26.735786,27.012436) (P,eta,phi,E)=(27.012436,-2.634656,-1.819375,27.012436)
+reconstructed electron with photons in lab: (x,y,z,t)=(-0.948701,-3.737567,-26.735786,27.012436) (P,eta,phi,E)=(27.012436,-2.634656,-1.819375,27.012436)
+ 4 0 0 0 0 0 0 0 0 0
+100000 event 492567 235969 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000652691 0.000699643
+ivtyp=1 beam spot: 0.321086 0.639243 reconstructed primary vertex: 0.30938 0.649971 15.5139
+number of part cand: 44
+0 Track 0 -1 etaLab=-1.07411 ptLab=0.208532 phiLab=-0.974196 ptStar=0.309298 etaStar=3.28896 phiStar=3.0734 ptStar2=0.323024 etaStar2=3.3028 phiStar2=3.0763 log10(z)=-1.23132 chi2vtx=3.89062 chi2nv=-1
+1 Track 1 -1 etaLab=-0.531421 ptLab=0.602208 phiLab=1.60663 ptStar=0.460492 etaStar=3.37851 phiStar=0.618737 ptStar2=0.442438 etaStar2=3.47575 phiStar2=0.648102 log10(z)=-1.01966 chi2vtx=1.57812 chi2nv=-1
+2 Track 2 1 etaLab=0.730225 ptLab=0.336686 phiLab=1.95252 ptStar=0.307683 etaStar=2.04937 phiStar=0.124394 ptStar2=0.30374 etaStar2=2.11985 phiStar2=0.126017 log10(z)=-1.77061 chi2vtx=6.46484 chi2nv=-1
+3 Track 3 1 etaLab=-0.706898 ptLab=0.210906 phiLab=1.39914 ptStar=0.159916 etaStar=3.62586 phiStar=0.954285 ptStar2=0.154368 etaStar2=3.71845 phiStar2=1.00698 log10(z)=-1.37138 chi2vtx=0.992188 chi2nv=-1
+4 Track 4 1 etaLab=-1.3871 ptLab=0.16842 phiLab=0.618082 ptStar=0.190037 etaStar=3.86961 phiStar=2.06661 ptStar2=0.19767 etaStar2=3.88748 phiStar2=2.13388 log10(z)=-1.19071 chi2vtx=1.11328 chi2nv=-1
+5 Track 5 1 etaLab=-1.5242 ptLab=0.556698 phiLab=1.29844 ptStar=0.386663 etaStar=4.45681 phiStar=1.58567 ptStar2=0.391408 etaStar2=4.50184 phiStar2=1.72736 log10(z)=-0.62729 chi2vtx=0.46875 chi2nv=-1
+6 Track 6 -1 etaLab=1.42824 ptLab=0.982616 phiLab=2.64018 ptStar=0.95089 etaStar=1.18696 phiStar=-0.595754 ptStar2=0.946609 etaStar2=1.24888 phiStar2=-0.598823 log10(z)=-1.65578 chi2vtx=0.46875 chi2nv=-1
+7 Track 7 1 etaLab=0.707566 ptLab=0.626217 phiLab=-0.671519 ptStar=0.67328 etaStar=1.82311 phiStar=2.76736 ptStar2=0.679726 etaStar2=1.87092 phiStar2=2.77109 log10(z)=-1.52976 chi2vtx=0.353516 chi2nv=-1
+8 Track 8 -1 etaLab=1.27964 ptLab=0.451257 phiLab=2.55314 ptStar=0.432243 etaStar=1.40747 phiStar=-0.510434 ptStar2=0.429675 etaStar2=1.47126 phiStar2=-0.513783 log10(z)=-1.90067 chi2vtx=0.144531 chi2nv=-1
+9 Track 9 1 etaLab=1.25869 ptLab=0.183165 phiLab=-2.98367 ptStar=0.179411 etaStar=1.72627 phiStar=-1.29922 ptStar2=0.178962 etaStar2=1.78792 phiStar2=-1.30838 log10(z)=-2.13878 chi2vtx=0.0234375 chi2nv=-1
+10 Track 10 -3 etaLab=2.26996 ptLab=0.416075 phiLab=2.61786 ptStar=0.409646 etaStar=0.380964 phiStar=-0.561399 ptStar2=0.408774 etaStar2=0.443033 phiStar2=-0.562741 log10(z)=-2.35695 chi2vtx=0.951172 chi2nv=-1
+43 Track 11 4 etaLab=1.57806 ptLab=0.138913 phiLab=0.442997 ptStar=0.139648 etaStar=1.60414 phiStar=1.686 ptStar2=0.13979 etaStar2=1.66425 phiStar2=1.69449 log10(z)=-2.29252 chi2vtx=12.741 chi2nv=2.16023
+44 Track 12 4 etaLab=2.07863 ptLab=0.137101 phiLab=2.32297 ptStar=0.131836 etaStar=1.12828 phiStar=-0.267318 ptStar2=0.131121 etaStar2=1.20049 phiStar2=-0.268812 log10(z)=-2.49971 chi2vtx=2.10478 chi2nv=8.83846
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.818736,-1.515372,-22.144292,22.211176) (P,eta,phi,E)=(22.211176,-3.248514,-1.075441,22.211176)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.818736,-1.515372,-22.144292,22.211176) (P,eta,phi,E)=(22.211176,-3.248514,-1.075441,22.211176)
+ 0 10 0 1 2 0 0 0 0 0
+110000 event 492568 56352 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000650294 0.00069999
+ivtyp=1 beam spot: 0.321402 0.639308 reconstructed primary vertex: 0.299873 0.647964 13.4318
+number of part cand: 47
+0 Track 0 2 etaLab=1.8331 ptLab=0.702738 phiLab=2.83884 ptStar=0.703264 etaStar=0.366266 phiStar=1.62894 ptStar2=0.703273 etaStar2=0.371312 phiStar2=1.62914 log10(z)=-2.30806 chi2vtx=0.570312 chi2nv=-1
+1 Track 1 -2 etaLab=1.82524 ptLab=0.57673 phiLab=-2.67527 ptStar=0.570968 etaStar=0.397048 phiStar=0.856572 ptStar2=0.57089 etaStar2=0.402282 phiStar2=0.856731 log10(z)=-2.38277 chi2vtx=2.26367 chi2nv=-1
+2 Track 2 1 etaLab=1.39503 ptLab=1.11897 phiLab=2.05192 ptStar=1.13757 etaStar=0.775418 phiStar=2.41596 ptStar2=1.13783 etaStar2=0.780187 phiStar2=2.41616 log10(z)=-1.92584 chi2vtx=1.96289 chi2nv=-1
+3 Track 3 -1 etaLab=0.726651 ptLab=0.435218 phiLab=0.861667 ptStar=0.453542 etaStar=1.4814 phiStar=-2.71123 ptStar2=0.453795 etaStar2=1.48586 phiStar2=-2.71149 log10(z)=-2.01773 chi2vtx=16.9219 chi2nv=-1
+4 Track 4 -1 etaLab=-1.16648 ptLab=5.3989 phiLab=-0.790002 ptStar=4.80623 etaStar=3.45783 phiStar=-1.32047 ptStar2=4.80102 etaStar2=3.46388 phiStar2=-1.32475 log10(z)=-0.136204 chi2vtx=1.79297 chi2nv=-1
+5 Track 5 1 etaLab=-0.891908 ptLab=0.424779 phiLab=-0.973519 ptStar=0.370296 etaStar=3.21917 phiStar=-1.04878 ptStar2=0.369656 etaStar2=3.22588 phiStar2=-1.0518 log10(z)=-1.35301 chi2vtx=3.46289 chi2nv=-1
+6 Track 6 1 etaLab=0.734026 ptLab=0.235345 phiLab=0.974412 ptStar=0.244849 etaStar=1.4014 phiStar=-2.81813 ptStar2=0.24498 etaStar2=1.40584 phiStar2=-2.81831 log10(z)=-2.3222 chi2vtx=7.90625 chi2nv=-1
+7 Track 7 -1 etaLab=-1.26451 ptLab=0.125815 phiLab=-2.08661 ptStar=0.0849542 etaStar=3.9121 phiStar=0.385119 ptStar2=0.0844068 etaStar2=3.92355 phiStar2=0.387749 log10(z)=-1.69107 chi2vtx=0.0996094 chi2nv=-1
+8 Track 8 1 etaLab=-1.45105 ptLab=0.264269 phiLab=-0.0830396 ptStar=0.299368 etaStar=3.51538 phiStar=-2.08827 ptStar2=0.300063 etaStar2=3.51804 phiStar2=-2.09232 log10(z)=-1.31672 chi2vtx=0.253906 chi2nv=-1
+9 Track 9 -1 etaLab=1.16318 ptLab=0.121253 phiLab=-2.20796 ptStar=0.114705 etaStar=1.76975 phiStar=0.400575 ptStar2=0.114616 etaStar2=1.77589 phiStar2=0.400907 log10(z)=-2.47443 chi2vtx=6.35938 chi2nv=-1
+10 Track 10 1 etaLab=1.6906 ptLab=1.39202 phiLab=1.62902 ptStar=1.41394 etaStar=0.475751 phiStar=2.82911 ptStar2=1.41424 etaStar2=0.48053 phiStar2=2.82918 log10(z)=-1.9615 chi2vtx=0.150391 chi2nv=-1
+11 Track 11 1 etaLab=0.994535 ptLab=0.123459 phiLab=2.21349 ptStar=0.128662 etaStar=1.80429 phiStar=2.28919 ptStar2=0.128736 etaStar2=1.80898 phiStar2=2.28984 log10(z)=-2.41377 chi2vtx=0.537109 chi2nv=-1
+12 Track 12 3 etaLab=2.31966 ptLab=0.13132 phiLab=-2.18828 ptStar=0.129057 etaStar=0.336539 phiStar=0.3647 ptStar2=0.129026 etaStar2=0.34385 phiStar2=0.364792 log10(z)=-2.94053 chi2vtx=0.470703 chi2nv=-1
+46 Track 13 -4 etaLab=1.87068 ptLab=0.969865 phiLab=2.23682 ptStar=0.978078 etaStar=0.308836 phiStar=2.22729 ptStar2=0.978191 etaStar2=0.313739 phiStar2=2.22744 log10(z)=-2.19215 chi2vtx=0.189723 chi2nv=0.292389
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.541035,2.039131,-15.679987,15.821276) (P,eta,phi,E)=(15.821276,-2.703489,1.311446,15.821276)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.541035,2.039131,-15.679987,15.821276) (P,eta,phi,E)=(15.821276,-2.703489,1.311446,15.821276)
+ 0 10 2 1 1 0 0 0 0 0
+120000 event 492568 193206 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000647801 0.000700351
+ivtyp=1 beam spot: 0.321314 0.639362 reconstructed primary vertex: 0.315918 0.647697 11.3997
+number of part cand: 34
+0 Track 0 -1 etaLab=1.67071 ptLab=0.962676 phiLab=-0.38599 ptStar=0.807397 etaStar=1.08512 phiStar=-0.213244 ptStar2=0.609664 etaStar2=1.74744 phiStar2=-0.284075 log10(z)=-1.76932 chi2vtx=0.984375 chi2nv=-1
+1 Track 1 1 etaLab=1.76179 ptLab=4.1147 phiLab=-0.459834 ptStar=3.51256 etaStar=0.960228 phiStar=-0.122611 ptStar2=2.73947 etaStar2=1.58882 phiStar2=-0.157468 log10(z)=-1.18625 chi2vtx=6.20312 chi2nv=-1
+33 Track 2 4 etaLab=1.87332 ptLab=0.734802 phiLab=-0.728073 ptStar=0.636249 etaStar=0.860959 phiStar=0.189276 ptStar2=0.510192 etaStar2=1.46512 phiStar2=0.236843 log10(z)=-1.96831 chi2vtx=1.95901 chi2nv=0.240234
+34 Track 3 -4 etaLab=1.98633 ptLab=0.597098 phiLab=-0.23432 ptStar=0.527698 etaStar=0.739538 phiStar=-0.375543 ptStar2=0.440485 etaStar2=1.30606 phiStar2=-0.454928 log10(z)=-2.09988 chi2vtx=14.7141 chi2nv=2.54102
+36 Track 4 4 etaLab=2.22373 ptLab=1.07762 phiLab=-0.0502596 ptStar=0.990465 etaStar=0.434101 phiStar=-0.564613 ptStar2=0.882748 etaStar2=0.931634 phiStar2=-0.64398 log10(z)=-1.96208 chi2vtx=2.27553 chi2nv=1.92969
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-7.862361,4.977961,-21.203492,23.155666) (P,eta,phi,E)=(23.155666,-1.561688,2.577163,23.155666)
+reconstructed electron with photons in lab: (x,y,z,t)=(-7.862361,4.977961,-21.203492,23.155666) (P,eta,phi,E)=(23.155666,-1.561688,2.577163,23.155666)
+ 1 2 0 0 3 0 0 0 0 0
+130000 event 492569 33496 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000645125 0.000700738
+ivtyp=1 beam spot: 0.32124 0.639382 reconstructed primary vertex: 0.326683 0.633492 -8.26202
+number of part cand: 36
+0 Track 0 1 etaLab=1.70316 ptLab=0.229451 phiLab=-0.782727 ptStar=0.201334 etaStar=1.69619 phiStar=-0.226137 ptStar2=0.208019 etaStar2=1.5302 phiStar2=-0.21875 log10(z)=-1.92233 chi2vtx=2.14062 chi2nv=-1
+1 Track 1 -1 etaLab=1.63748 ptLab=0.407984 phiLab=-0.957372 ptStar=0.363143 etaStar=1.55994 phiStar=-0.0262748 ptStar2=0.37383 etaStar2=1.4002 phiStar2=-0.0255235 log10(z)=-1.72929 chi2vtx=5.35156 chi2nv=-1
+2 Track 2 1 etaLab=1.97335 ptLab=0.114301 phiLab=1.10676 ptStar=0.125136 etaStar=1.76903 phiStar=-2.22397 ptStar2=0.122357 etaStar2=1.6527 phiStar2=-2.19368 log10(z)=-2.08934 chi2vtx=0.273438 chi2nv=-1
+3 Track 3 -1 etaLab=-0.709168 ptLab=0.55564 phiLab=-1.76193 ptStar=0.433351 etaStar=3.95052 phiStar=2.01535 ptStar2=0.394155 etaStar2=3.91629 phiStar2=1.69266 log10(z)=-0.616989 chi2vtx=0.695312 chi2nv=-1
+4 Track 4 -1 etaLab=0.704739 ptLab=0.318981 phiLab=-2.33915 ptStar=0.312802 etaStar=2.43336 phiStar=1.65036 ptStar2=0.311826 etaStar2=2.30702 phiStar2=1.58013 log10(z)=-1.41681 chi2vtx=0.998047 chi2nv=-1
+5 Track 5 1 etaLab=0.315934 ptLab=0.197843 phiLab=-0.632025 ptStar=0.113367 etaStar=3.47858 phiStar=-0.638926 ptStar2=0.132219 etaStar2=3.1953 phiStar2=-0.536707 log10(z)=-1.4037 chi2vtx=0.695312 chi2nv=-1
+7 Track 6 1 etaLab=0.653987 ptLab=0.144389 phiLab=-1.67381 ptStar=0.104102 etaStar=3.14935 phiStar=1.08894 ptStar2=0.111832 etaStar2=2.94773 phiStar2=0.97 log10(z)=-1.58291 chi2vtx=1.23438 chi2nv=-1
+8 Track 7 -1 etaLab=1.40606 ptLab=0.712049 phiLab=-0.910567 ptStar=0.620396 etaStar=1.7465 phiStar=-0.0805814 ptStar2=0.642232 etaStar2=1.58246 phiStar2=-0.0778359 log10(z)=-1.41772 chi2vtx=8.20312 chi2nv=-1
+9 Track 8 -1 etaLab=1.47193 ptLab=0.669298 phiLab=1.16625 ptStar=0.716832 etaStar=1.47872 phiStar=-2.24223 ptStar2=0.704944 etaStar2=1.36589 phiStar2=-2.22071 log10(z)=-1.47111 chi2vtx=0.429688 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-1.338089,1.998310,-25.187815,25.302366) (P,eta,phi,E)=(25.302366,-3.044255,2.160834,25.302366)
+reconstructed electron with photons in lab: (x,y,z,t)=(-1.338089,1.998310,-25.187815,25.302366) (P,eta,phi,E)=(25.302366,-3.044255,2.160834,25.302366)
+ 1 9 0 0 0 0 0 0 0 0
+140000 event 492570 49830 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000642092 0.000701177
+ivtyp=1 beam spot: 0.320962 0.639332 reconstructed primary vertex: 0.318436 0.63694 -3.87778
+number of part cand: 31
+ 0 0 0 0 0 0 0 0 0 0
+150000 event 492572 115745 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000639531 0.000701548
+ivtyp=4 beam spot: 0.32047 0.639208 reconstructed primary vertex: 0.328532 0.631208 -10.8281
+number of part cand: 12
+0 Track 0 3 etaLab=2.69736 ptLab=0.806839 phiLab=2.50709 ptStar=0.729546 etaStar=0.936178 phiStar=0.111579 ptStar2=0.114401 etaStar2=3.9909 phiStar2=2.35199 log10(z)=-1.46811 chi2vtx=1.06677 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.966602,-1.161943,-26.739719,26.837105) (P,eta,phi,E)=(26.837105,-3.155094,-0.533656,26.837105)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.966602,-1.161943,-26.739719,26.837105) (P,eta,phi,E)=(26.837105,-3.155094,-0.533656,26.837105)
+ 1 0 0 1 0 0 0 0 0 0
+160000 event 492572 274871 type=0 weight=10
+HERA beam energies: 27.611 919.125 beam tilt: -0.000636342 0.000702009
+ivtyp=0 beam spot: 0.319843 0.638927 reconstructed primary vertex: 0.319792 0.638984 0.08
+number of part cand: 6
+ 0 0 0 0 0 0 0 0 0 0
+170000 event 492575 21696 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000632731 0.000702532
+ivtyp=1 beam spot: 0.318712 0.638467 reconstructed primary vertex: 0.327728 0.62751 -15.6031
+number of part cand: 12
+ 0 0 0 0 0 0 0 0 0 0
+190000 event 492577 88603 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000626418 0.000703445
+ivtyp=1 beam spot: 0.315933 0.637425 reconstructed primary vertex: 0.312714 0.640594 3.6877
+number of part cand: 32
+1 Track 0 -1 etaLab=0.170392 ptLab=0.676697 phiLab=0.219227 ptStar=0.505789 etaStar=2.87701 phiStar=-1.12985 ptStar2=0.48531 etaStar2=2.99913 phiStar2=-1.23006 log10(z)=-1.12374 chi2vtx=2.7168 chi2nv=-1
+2 Track 1 -1 etaLab=-0.44148 ptLab=0.637358 phiLab=-0.203663 ptStar=0.232859 etaStar=4.19432 phiStar=-1.03395 ptStar2=0.201892 etaStar2=4.41779 phiStar2=-1.43753 log10(z)=-0.888588 chi2vtx=0.123047 chi2nv=-1
+4 Track 2 -1 etaLab=1.26127 ptLab=0.167252 phiLab=1.05118 ptStar=0.171429 etaStar=1.91272 phiStar=-1.79203 ptStar2=0.173108 etaStar2=1.98577 phiStar2=-1.83167 log10(z)=-2.0065 chi2vtx=7.05859 chi2nv=-1
+5 Track 3 1 etaLab=1.29603 ptLab=0.184791 phiLab=0.28284 ptStar=0.24667 etaStar=3.75836 phiStar=-2.57062 ptStar2=0.302222 etaStar2=3.63717 phiStar2=-2.68476 log10(z)=-1.04956 chi2vtx=23.6719 chi2nv=-1
+6 Track 4 -1 etaLab=1.77349 ptLab=0.702205 phiLab=2.85631 ptStar=0.760515 etaStar=0.911962 phiStar=2.92239 ptStar2=0.77161 etaStar2=0.978857 phiStar2=2.9256 log10(z)=-1.79809 chi2vtx=0.869141 chi2nv=-1
+7 Track 5 -3 etaLab=2.26875 ptLab=0.616031 phiLab=2.42415 ptStar=0.647837 etaStar=0.449433 phiStar=-2.95682 ptStar2=0.653881 etaStar2=0.522429 phiStar2=-2.95855 log10(z)=-2.06489 chi2vtx=2.84766 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-3.257905,1.878433,-23.574492,23.872561) (P,eta,phi,E)=(23.872561,-2.535024,2.618574,23.872561)
+reconstructed electron with photons in lab: (x,y,z,t)=(-3.257905,1.878433,-23.574492,23.872561) (P,eta,phi,E)=(23.872561,-2.535024,2.618574,23.872561)
+ 2 5 0 1 0 0 0 0 0 0
+200000 event 492578 24861 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000623111 0.000703924
+ivtyp=0 beam spot: 0.315836 0.636823 reconstructed primary vertex: 0.315786 0.636879 0.08
+number of part cand: 6
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.211026,0.623821,-22.748931,22.864637) (P,eta,phi,E)=(22.864637,-2.988451,0.274993,22.864637)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.211026,0.623821,-22.748931,22.864637) (P,eta,phi,E)=(22.864637,-2.988451,0.274993,22.864637)
+ 0 0 0 0 0 0 0 0 0 0
+210000 event 492579 56146 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.000619194 0.000704491
+ivtyp=1 beam spot: 0.31549 0.636118 reconstructed primary vertex: 0.308156 0.642066 8.3463
+number of part cand: 18
+ 0 0 0 0 0 0 0 0 0 0
+220000 event 492580 40944 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.00061536 0.000705046
+ivtyp=0 beam spot: 0.316231 0.635489 reconstructed primary vertex: 0.316182 0.635546 0.08
+number of part cand: 1
+ 0 0 0 0 0 0 0 0 0 0
+230000 event 492582 190508 type=0 weight=1
+HERA beam energies: 27.611 919.163 beam tilt: -0.000610802 0.000705705
+ivtyp=1 beam spot: 0.316986 0.634891 reconstructed primary vertex: 0.319963 0.631372 -4.97622
+number of part cand: 9
+8 Track 0 -4 etaLab=2.69259 ptLab=0.199887 phiLab=1.22262 ptStar=0.170062 etaStar=1.3079 phiStar=0.719001 ptStar2=0.317812 etaStar2=1.94937 phiStar2=2.78142 log10(z)=-1.93104 chi2vtx=25.8047 chi2nv=2.01953
+9 Track 1 -4 etaLab=2.30556 ptLab=0.446778 phiLab=1.73372 ptStar=0.35577 etaStar=1.49419 phiStar=0.1052 ptStar2=0.681651 etaStar2=2.07807 phiStar2=3.08676 log10(z)=-1.54514 chi2vtx=3.87842 chi2nv=0.392578
+10 Track 2 -4 etaLab=2.4606 ptLab=0.290643 phiLab=2.0449 ptStar=0.235409 etaStar=1.4244 phiStar=-0.282149 ptStar2=0.424646 etaStar2=2.07899 phiStar2=-2.98663 log10(z)=-1.74983 chi2vtx=11.6805 chi2nv=13.0938
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.783069,-3.110297,-26.657954,26.850208) (P,eta,phi,E)=(26.850208,-2.814387,-1.324156,26.850208)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.783069,-3.110297,-26.657954,26.850208) (P,eta,phi,E)=(26.850208,-2.814387,-1.324156,26.850208)
+ 0 0 0 0 3 0 0 0 0 0
+240000 event 492584 84445 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000606028 0.000706397
+ivtyp=1 beam spot: 0.315998 0.63453 reconstructed primary vertex: 0.309205 0.642929 11.9066
+number of part cand: 10
+0 Track 0 -1 etaLab=1.74935 ptLab=0.126761 phiLab=1.62483 ptStar=0.117226 etaStar=1.5659 phiStar=1.14613 ptStar2=0.108052 etaStar2=2.11638 phiStar2=1.41927 log10(z)=-2.10884 chi2vtx=3.35938 chi2nv=-1
+1 Track 1 -1 etaLab=1.48085 ptLab=0.192617 phiLab=2.68251 ptStar=0.133732 etaStar=2.51118 phiStar=-0.0799954 ptStar2=0.0401712 etaStar2=4.18714 phiStar2=-0.269268 log10(z)=-1.63803 chi2vtx=1.10156 chi2nv=-1
+2 Track 2 -1 etaLab=1.57531 ptLab=0.459186 phiLab=2.74368 ptStar=0.36634 etaStar=1.96947 phiStar=-0.14645 ptStar2=0.218965 etaStar2=2.95477 phiStar2=-0.246636 log10(z)=-1.43751 chi2vtx=4.73047 chi2nv=-1
+3 Track 3 -1 etaLab=0.0433126 ptLab=0.527481 phiLab=2.23454 ptStar=0.202194 etaStar=4.18778 phiStar=1.50372 ptStar2=0.772622 etaStar2=3.31627 phiStar2=2.87742 log10(z)=-0.733384 chi2vtx=2.98242 chi2nv=-1
+4 Track 4 1 etaLab=1.61511 ptLab=0.574341 phiLab=-2.18326 ptStar=0.57406 etaStar=1.67556 phiStar=-1.66355 ptStar2=0.615508 etaStar2=2.07604 phiStar2=-1.95083 log10(z)=-1.37041 chi2vtx=3.78125 chi2nv=-1
+5 Track 5 3 etaLab=2.07034 ptLab=0.615296 phiLab=2.91791 ptStar=0.544971 etaStar=1.3332 phiStar=-0.329788 ptStar2=0.434704 etaStar2=2.03075 phiStar2=-0.41806 log10(z)=-1.54071 chi2vtx=0.620117 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.232375,-1.262203,-26.132203,26.257736) (P,eta,phi,E)=(26.257736,-3.016952,-0.514596,26.257736)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.232375,-1.262203,-26.132203,26.257736) (P,eta,phi,E)=(26.257736,-3.016952,-0.514596,26.257736)
+ 0 5 0 1 0 0 0 0 0 0
+250000 event 492593 14396 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000599661 0.000707318
+ivtyp=1 beam spot: 0.317229 0.63464 reconstructed primary vertex: 0.306324 0.647029 17.5265
+number of part cand: 7
+ 0 0 0 0 0 0 0 0 0 0
+270000 event 492635 19583 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000666898 0.000652889
+ivtyp=1 beam spot: 0.306553 0.638234 reconstructed primary vertex: 0.304955 0.639244 1.55659
+number of part cand: 14
+ 0 0 0 0 0 0 0 0 0 0
+280000 event 492635 130672 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000667042 0.000660694
+ivtyp=0 beam spot: 0.31047 0.63768 reconstructed primary vertex: 0.310237 0.637911 0.35
+number of part cand: 1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-0.324202,-2.775916,-26.768543,26.914043) (P,eta,phi,E)=(26.914043,-2.955334,-1.687060,26.914043)
+reconstructed electron with photons in lab: (x,y,z,t)=(-0.324202,-2.775916,-26.768543,26.914043) (P,eta,phi,E)=(26.914043,-2.955334,-1.687060,26.914043)
+ 0 0 0 0 0 0 0 0 0 0
+290000 event 492636 67179 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000667205 0.000669474
+ivtyp=1 beam spot: 0.31412 0.637279 reconstructed primary vertex: 0.313347 0.637589 0.498825
+number of part cand: 71
+0 Track 0 2 etaLab=2.03288 ptLab=0.23937 phiLab=2.45203 ptStar=0.238985 etaStar=0.522364 phiStar=-1.48822 ptStar2=0.239025 etaStar2=0.467637 phiStar2=-1.48623 log10(z)=-2.60497 chi2vtx=0.244141 chi2nv=-1
+2 Track 1 -1 etaLab=0.83551 ptLab=0.215232 phiLab=-3.13226 ptStar=0.222584 etaStar=1.75644 phiStar=-2.21635 ptStar2=0.221731 etaStar2=1.71073 phiStar2=-2.21122 log10(z)=-2.1299 chi2vtx=0.445312 chi2nv=-1
+4 Track 2 1 etaLab=-0.367002 ptLab=0.582615 phiLab=-1.95811 ptStar=0.667688 etaStar=2.59563 phiStar=2.96555 ptStar2=0.658073 etaStar2=2.56168 phiStar2=2.96295 log10(z)=-1.29312 chi2vtx=0.404297 chi2nv=-1
+5 Track 3 -1 etaLab=-1.15544 ptLab=0.550966 phiLab=0.237933 ptStar=0.4369 etaStar=3.74004 phiStar=1.02278 ptStar2=0.447685 etaStar2=3.66722 phiStar2=0.984501 log10(z)=-0.980382 chi2vtx=8.89062 chi2nv=-1
+6 Track 4 1 etaLab=1.40406 ptLab=0.482923 phiLab=0.868758 ptStar=0.470071 etaStar=1.03564 phiStar=0.115739 ptStar2=0.47152 etaStar2=0.983262 phiStar2=0.115382 log10(z)=-2.1189 chi2vtx=0.28125 chi2nv=-1
+7 Track 5 -1 etaLab=1.4485 ptLab=0.44479 phiLab=0.253904 ptStar=0.436232 etaStar=0.994571 phiStar=0.745106 ptStar2=0.437191 etaStar2=0.942874 phiStar2=0.743086 log10(z)=-2.16815 chi2vtx=0.248047 chi2nv=-1
+8 Track 6 -1 etaLab=0.453405 ptLab=0.417203 phiLab=3.02811 ptStar=0.441534 etaStar=2.41999 phiStar=-2.1445 ptStar2=0.438589 etaStar2=2.37727 phiStar2=-2.13403 log10(z)=-1.54492 chi2vtx=2.39453 chi2nv=-1
+70 Track 7 4 etaLab=2.06426 ptLab=0.559689 phiLab=-2.1201 ptStar=0.567306 etaStar=0.307778 phiStar=3.10204 ptStar2=0.566447 etaStar2=0.259501 phiStar2=3.10198 log10(z)=-2.34858 chi2vtx=2.30115 chi2nv=1.05859
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-0.945482,-1.413962,-19.163751,19.239090) (P,eta,phi,E)=(19.239090,-3.116946,-2.160188,19.239090)
+reconstructed electron with photons in lab: (x,y,z,t)=(-0.945482,-1.413962,-19.163751,19.239090) (P,eta,phi,E)=(19.239090,-3.116946,-2.160188,19.239090)
+ 5 6 1 0 1 0 0 0 0 0
+300000 event 492636 190720 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000667356 0.000677686
+ivtyp=1 beam spot: 0.316866 0.637084 reconstructed primary vertex: 0.323888 0.631861 -7.37462
+number of part cand: 7
+ 0 0 0 0 0 0 0 0 0 0
+310000 event 492636 334793 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000667539 0.000687578
+ivtyp=1 beam spot: 0.319319 0.637038 reconstructed primary vertex: 0.322876 0.633781 -4.74692
+number of part cand: 12
+0 Track 0 -1 etaLab=0.00422737 ptLab=0.300321 phiLab=-1.82405 ptStar=0.0833687 etaStar=5.24061 phiStar=2.02926 ptStar2=0.373755 etaStar2=4.07217 phiStar2=2.94021 log10(z)=-0.860107 chi2vtx=8.49219 chi2nv=-1
+1 Track 1 -1 etaLab=1.11987 ptLab=0.300171 phiLab=-1.28456 ptStar=0.263112 etaStar=1.95787 phiStar=-0.329895 ptStar2=0.226498 etaStar2=2.44049 phiStar2=-0.385809 log10(z)=-1.78581 chi2vtx=1.15039 chi2nv=-1
+2 Track 2 1 etaLab=0.167617 ptLab=0.768847 phiLab=-1.42778 ptStar=0.551348 etaStar=2.9595 phiStar=-0.202439 ptStar2=0.337076 etaStar2=3.78182 phiStar2=-0.335105 log10(z)=-1.03182 chi2vtx=9.59375 chi2nv=-1
+3 Track 3 -1 etaLab=-1.16604 ptLab=0.0929848 phiLab=1.85975 ptStar=0.207346 etaStar=3.29836 phiStar=3.01273 ptStar2=0.323815 etaStar2=3.18306 phiStar2=3.05921 log10(z)=-1.30919 chi2vtx=2.58008 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.003975,2.375026,-23.987559,24.104849) (P,eta,phi,E)=(24.104849,-3.008115,1.569123,24.104849)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.003975,2.375026,-23.987559,24.104849) (P,eta,phi,E)=(24.104849,-3.008115,1.569123,24.104849)
+ 0 4 0 0 0 0 0 0 0 0
+320000 event 492638 38500 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.000667711 0.000696859
+ivtyp=1 beam spot: 0.320703 0.637134 reconstructed primary vertex: 0.34661 0.610096 -38.7993
+number of part cand: 34
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.790963,-3.771721,-28.195648,28.457794) (P,eta,phi,E)=(28.457794,-2.687902,-1.364083,28.457794)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.790963,-3.771721,-28.195648,28.457794) (P,eta,phi,E)=(28.457794,-2.687902,-1.364083,28.457794)
+ 0 0 0 0 0 0 0 0 0 0
+330000 event 492638 162182 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.000667862 0.000705057
+ivtyp=1 beam spot: 0.321159 0.637295 reconstructed primary vertex: 0.327443 0.631397 -8.21573
+number of part cand: 6
+0 Track 0 1 etaLab=1.92315 ptLab=0.310797 phiLab=2.51199 ptStar=0.310456 etaStar=0.235785 phiStar=1.41133 ptStar2=0.306837 etaStar2=1.55927 phiStar2=1.52513 log10(z)=-2.74859 chi2vtx=0.603516 chi2nv=-1
+1 Track 1 1 etaLab=1.48146 ptLab=0.843711 phiLab=-2.11822 ptStar=0.836319 etaStar=0.596504 phiStar=-0.250586 ptStar2=0.713262 etaStar2=2.01019 phiStar2=-0.295014 log10(z)=-2.18988 chi2vtx=10.7578 chi2nv=-1
+2 Track 2 1 etaLab=1.489 ptLab=0.237276 phiLab=-1.33217 ptStar=0.235884 etaStar=0.792318 phiStar=-1.04441 ptStar2=0.216451 etaStar2=2.17716 phiStar2=-1.2293 log10(z)=-2.63328 chi2vtx=9.35156 chi2nv=-1
+3 Track 3 -1 etaLab=1.57507 ptLab=0.804967 phiLab=-2.53904 ptStar=0.798421 etaStar=0.503318 phiStar=0.173905 ptStar2=0.689073 etaStar2=1.90659 phiStar2=0.201856 log10(z)=-2.24977 chi2vtx=1.38867 chi2nv=-1
+4 Track 4 -3 etaLab=2.68367 ptLab=0.443623 phiLab=0.335585 ptStar=0.444791 etaStar=-0.614678 phiStar=-2.70339 ptStar2=0.464452 etaStar2=0.644018 phiStar2=-2.72313 log10(z)=-2.96151 chi2vtx=0.405273 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.843773,0.826450,-12.349200,12.405552) (P,eta,phi,E)=(12.405552,-3.042581,0.775027,12.405552)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.843773,0.826450,-12.349200,12.405552) (P,eta,phi,E)=(12.405552,-3.042581,0.775027,12.405552)
+ 1 4 0 1 0 0 0 0 0 0
+340000 event 492639 99789 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.00066808 0.000716852
+ivtyp=4 beam spot: 0.321148 0.637587 reconstructed primary vertex: 0.315622 0.645436 8.77845
+number of part cand: 35
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.318346,-3.021192,-27.621512,27.788071) (P,eta,phi,E)=(27.788071,-2.903580,-1.465813,27.788071)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.318346,-3.021192,-27.621512,27.788071) (P,eta,phi,E)=(27.788071,-2.903580,-1.465813,27.788071)
+ 0 0 0 0 0 0 0 0 0 0
+350000 event 492639 249575 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000668271 0.000727216
+ivtyp=4 beam spot: 0.321471 0.637838 reconstructed primary vertex: 0.261438 0.708145 84.9536
+number of part cand: 2
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-0.925327,-2.057529,-28.504459,28.593597) (P,eta,phi,E)=(28.593597,-3.231165,-1.993424,28.593597)
+reconstructed electron with photons in lab: (x,y,z,t)=(-0.925327,-2.057529,-28.504459,28.593597) (P,eta,phi,E)=(28.593597,-3.231165,-1.993424,28.593597)
+ 0 0 0 0 0 0 0 0 0 0
+360000 event 492640 14849 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000668459 0.000737383
+ivtyp=1 beam spot: 0.322478 0.638014 reconstructed primary vertex: 0.3252 0.634445 -4.89892
+number of part cand: 7
+ 0 0 0 0 0 0 0 0 0 0
+370000 event 492640 152016 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000668648 0.00074758
+ivtyp=0 beam spot: 0.322688 0.638063 reconstructed primary vertex: 0.322454 0.638324 0.35
+number of part cand: 25
+24 Track 0 4 etaLab=2.19641 ptLab=0.610991 phiLab=-0.858687 ptStar=0.612599 etaStar=-0.130164 phiStar=2.19138 ptStar2=0.612581 etaStar2=-0.133685 phiStar2=2.19134 log10(z)=-2.63225 chi2vtx=12.8175 chi2nv=1.9707
+25 Track 1 -4 etaLab=-2.72729 ptLab=0.0177901 phiLab=-0.585461 ptStar=0.0252029 etaStar=4.61854 phiStar=2.41463 ptStar2=0.0250956 etaStar2=4.61933 phiStar2=2.41082 log10(z)=-1.96674 chi2vtx=29.684 chi2nv=0.0332031
+26 Track 2 -4 etaLab=3.56047 ptLab=0.00552434 phiLab=2.56884 ptStar=0.00532687 etaStar=4.60228 phiStar=-1.76712 ptStar2=0.00532077 etaStar2=4.59952 phiStar2=-1.76126 log10(z)=-2.62279 chi2vtx=0.256987 chi2nv=0.00390625
+27 Track 3 4 etaLab=4.19299 ptLab=0.0162606 phiLab=1.79611 ptStar=0.0156387 etaStar=-0.0461101 phiStar=-0.487274 ptStar2=0.0156456 etaStar2=-0.0771545 phiStar2=-0.487039 log10(z)=-3.23002 chi2vtx=5.79867 chi2nv=0.167969
+28 Track 4 4 etaLab=2.9912 ptLab=0.32416 phiLab=1.99926 ptStar=0.323573 etaStar=-0.918527 phiStar=-0.671695 ptStar2=0.32358 etaStar2=-0.922153 phiStar2=-0.671679 log10(z)=-3.20082 chi2vtx=0.182892 chi2nv=0.0429688
+29 Track 5 4 etaLab=2.65573 ptLab=0.020322 phiLab=-2.95149 ptStar=0.0213544 etaStar=2.93643 phiStar=-2.0979 ptStar2=0.0213418 etaStar2=2.93281 phiStar2=-2.09688 log10(z)=-2.7259 chi2vtx=0.112027 chi2nv=0.0214844
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-0.284732,-1.154519,-12.264812,12.322321) (P,eta,phi,E)=(12.322321,-3.029017,-1.812595,12.322321)
+reconstructed electron with photons in lab: (x,y,z,t)=(-0.284732,-1.154519,-12.264812,12.322321) (P,eta,phi,E)=(12.322321,-3.029017,-1.812595,12.322321)
+ 0 0 0 0 6 0 0 0 0 0
+390000 event 492656 28688 type=0 weight=1
+HERA beam energies: 27.612 919.125 beam tilt: -0.000609394 0.000717644
+ivtyp=1 beam spot: 0.300012 0.639335 reconstructed primary vertex: 0.300919 0.642502 4.30801
+number of part cand: 21
+0 Track 0 -1 etaLab=1.62617 ptLab=0.511974 phiLab=1.14732 ptStar=0.536902 etaStar=0.727921 phiStar=2.76275 ptStar2=0.537991 etaStar2=0.743776 phiStar2=2.76356 log10(z)=-2.19401 chi2vtx=3.96289 chi2nv=-1
+1 Track 1 1 etaLab=1.98918 ptLab=0.0922016 phiLab=2.97894 ptStar=0.086459 etaStar=1.45884 phiStar=1.0029 ptStar2=0.0862266 etaStar2=1.48294 phiStar2=1.00713 log10(z)=-2.6259 chi2vtx=4.15625 chi2nv=-1
+2 Track 2 1 etaLab=1.67058 ptLab=0.339742 phiLab=1.39408 ptStar=0.354737 etaStar=0.75471 phiStar=2.52796 ptStar2=0.355397 etaStar2=0.771163 phiStar2=2.52927 log10(z)=-2.35608 chi2vtx=0.658203 chi2nv=-1
+3 Track 3 -1 etaLab=-1.06331 ptLab=0.75792 phiLab=-1.944 ptStar=0.354571 etaStar=4.17181 phiStar=-1.1864 ptStar2=0.34631 etaStar2=4.2129 phiStar2=-1.25049 log10(z)=-0.883988 chi2vtx=0.689453 chi2nv=-1
+4 Track 4 1 etaLab=-1.08233 ptLab=2.33617 phiLab=-2.72547 ptStar=0.904836 etaStar=4.37647 phiStar=1.00413 ptStar2=0.866926 etaStar2=4.43679 phiStar2=1.0771 log10(z)=-0.38825 chi2vtx=0.164062 chi2nv=-1
+5 Track 5 1 etaLab=0.896831 ptLab=0.290965 phiLab=0.760796 ptStar=0.326283 etaStar=1.501 phiStar=3.13109 ptStar2=0.327819 etaStar2=1.51411 phiStar2=3.13113 log10(z)=-2.07631 chi2vtx=0.144531 chi2nv=-1
+6 Track 6 -1 etaLab=-0.652388 ptLab=0.505957 phiLab=-2.547 ptStar=0.265169 etaStar=3.65946 phiStar=0.297851 ptStar2=0.25494 etaStar2=3.71632 phiStar2=0.310192 log10(z)=-1.23261 chi2vtx=0.876953 chi2nv=-1
+7 Track 7 1 etaLab=-1.06077 ptLab=0.251589 phiLab=2.91053 ptStar=0.214205 etaStar=3.59811 phiStar=1.79264 ptStar2=0.216143 etaStar2=3.60663 phiStar2=1.82941 log10(z)=-1.35189 chi2vtx=5.89062 chi2nv=-1
+19 Track 8 -4 etaLab=2.20518 ptLab=0.27092 phiLab=0.803105 ptStar=0.280312 etaStar=0.2536 phiStar=3.08932 ptStar2=0.28072 etaStar2=0.271667 phiStar2=3.08939 log10(z)=-2.65096 chi2vtx=32.7583 chi2nv=2.57541
+reconstructed electron w/o photons in lab: (x,y,z,t)=(3.083578,2.866976,-18.948843,19.410994) (P,eta,phi,E)=(19.410994,-2.209438,0.749014,19.410994)
+reconstructed electron with photons in lab: (x,y,z,t)=(3.083578,2.866976,-18.948843,19.410994) (P,eta,phi,E)=(19.410994,-2.209438,0.749014,19.410994)
+ 2 8 0 0 1 0 0 0 0 0
+400000 event 492660 993 type=0 weight=1
+HERA beam energies: 27.612 919.125 beam tilt: -0.000615086 0.000718762
+ivtyp=1 beam spot: 0.304279 0.639158 reconstructed primary vertex: 0.299583 0.644157 6.97647
+number of part cand: 18
+0 Track 0 -1 etaLab=1.64513 ptLab=0.249304 phiLab=1.21877 ptStar=0.173199 etaStar=2.28948 phiStar=1.29954 ptStar2=0.185742 etaStar2=2.076 phiStar2=1.11605 log10(z)=-1.58586 chi2vtx=19.625 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.990581,-4.965377,-26.136836,26.678673) (P,eta,phi,E)=(26.678673,-2.289798,-1.189521,26.678673)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.990581,-4.965377,-26.136836,26.678673) (P,eta,phi,E)=(26.678673,-2.289798,-1.189521,26.678673)
+ 1 1 0 0 0 0 0 0 0 0
+410000 event 492665 4645 type=0 weight=1
+HERA beam energies: 27.612 919.125 beam tilt: -0.000621815 0.000720084
+ivtyp=1 beam spot: 0.310343 0.639037 reconstructed primary vertex: 0.304916 0.64669 10.7434
+number of part cand: 19
+ 0 0 0 0 0 0 0 0 0 0
+420000 event 492665 169860 type=0 weight=1
+HERA beam energies: 27.612 919.125 beam tilt: -0.000628845 0.000721464
+ivtyp=4 beam spot: 0.315512 0.638972 reconstructed primary vertex: 0.304947 0.651682 14.9844
+number of part cand: 11
+0 Track 0 3 etaLab=2.61932 ptLab=0.569173 phiLab=-2.5081 ptStar=0.247167 etaStar=2.31448 phiStar=-0.737313 ptStar2=0.175689 etaStar2=2.90341 phiStar2=-1.90148 log10(z)=-1.09896 chi2vtx=0.203125 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(4.283572,1.501926,-27.147594,27.524473) (P,eta,phi,E)=(27.524473,-2.488592,0.337231,27.524473)
+reconstructed electron with photons in lab: (x,y,z,t)=(4.283572,1.501926,-27.147594,27.524473) (P,eta,phi,E)=(27.524473,-2.488592,0.337231,27.524473)
+ 0 0 0 1 0 0 0 0 0 0
+430000 event 492665 294042 type=0 weight=1
+HERA beam energies: 27.612 919.125 beam tilt: -0.000634222 0.00072252
+ivtyp=1 beam spot: 0.317205 0.638938 reconstructed primary vertex: 0.331917 0.629463 -12.7848
+number of part cand: 42
+0 Track 0 1 etaLab=1.90842 ptLab=0.176264 phiLab=-0.415189 ptStar=0.147671 etaStar=1.81119 phiStar=-0.481593 ptStar2=0.15105 etaStar2=1.72407 phiStar2=-0.469935 log10(z)=-1.95552 chi2vtx=1.02539 chi2nv=-1
+1 Track 1 1 etaLab=1.75559 ptLab=0.231944 phiLab=-2.27698 ptStar=0.231142 etaStar=1.62479 phiStar=1.63901 ptStar2=0.23086 etaStar2=1.56269 phiStar2=1.61786 log10(z)=-1.84586 chi2vtx=0.0722656 chi2nv=-1
+2 Track 2 -1 etaLab=1.7973 ptLab=0.128394 phiLab=-2.48307 ptStar=0.130942 etaStar=1.27459 phiStar=1.79133 ptStar2=0.130534 etaStar2=1.21608 phiStar2=1.77692 log10(z)=-2.25054 chi2vtx=18.2812 chi2nv=-1
+3 Track 3 -1 etaLab=0.911685 ptLab=0.423305 phiLab=-0.272308 ptStar=0.311943 etaStar=2.57236 phiStar=-0.77443 ptStar2=0.324186 etaStar2=2.47208 phiStar2=-0.73812 log10(z)=-1.30943 chi2vtx=1.36523 chi2nv=-1
+4 Track 4 -1 etaLab=0.153043 ptLab=0.952124 phiLab=-0.996858 ptStar=0.358745 etaStar=3.92674 phiStar=0.504506 ptStar2=0.425858 etaStar2=3.69361 phiStar2=0.419384 log10(z)=-0.661 chi2vtx=0.386719 chi2nv=-1
+5 Track 5 -1 etaLab=0.702519 ptLab=0.472048 phiLab=-1.75808 ptStar=0.392564 etaStar=2.63972 phiStar=1.34297 ptStar2=0.39829 etaStar2=2.56353 phiStar2=1.28756 log10(z)=-1.18057 chi2vtx=1.45703 chi2nv=-1
+6 Track 6 -1 etaLab=1.14421 ptLab=0.4127 phiLab=-2.18228 ptStar=0.405135 etaStar=2.06186 phiStar=1.63539 ptStar2=0.404499 etaStar2=2.00155 phiStar2=1.60299 log10(z)=-1.4173 chi2vtx=2.44922 chi2nv=-1
+7 Track 7 1 etaLab=0.744245 ptLab=1.07642 phiLab=-1.37269 ptStar=0.77396 etaStar=2.6906 phiStar=0.829464 ptStar2=0.806406 etaStar2=2.58788 phiStar2=0.78651 log10(z)=-0.863878 chi2vtx=3.88086 chi2nv=-1
+8 Track 8 1 etaLab=0.763968 ptLab=0.268853 phiLab=-2.78031 ptStar=0.330221 etaStar=2.31364 phiStar=2.29169 ptStar2=0.321304 etaStar2=2.27916 phiStar2=2.25951 log10(z)=-1.39682 chi2vtx=1.25391 chi2nv=-1
+9 Track 9 1 etaLab=0.785005 ptLab=0.237039 phiLab=2.42853 ptStar=0.340296 etaStar=2.18508 phiStar=3.07154 ptStar2=0.327853 etaStar2=2.16043 phiStar2=3.06888 log10(z)=-1.43944 chi2vtx=0.376953 chi2nv=-1
+10 Track 10 1 etaLab=1.29639 ptLab=0.414828 phiLab=-1.12813 ptStar=0.326478 etaStar=2.13158 phiStar=0.40385 ptStar2=0.336945 etaStar2=2.03807 phiStar2=0.390612 log10(z)=-1.48049 chi2vtx=4.51953 chi2nv=-1
+11 Track 11 1 etaLab=1.84841 ptLab=0.377065 phiLab=0.758554 ptStar=0.380522 etaStar=1.35076 phiStar=-1.70569 ptStar2=0.37975 etaStar2=1.29013 phiStar2=-1.68979 log10(z)=-1.75053 chi2vtx=0.404297 chi2nv=-1
+12 Track 12 1 etaLab=1.51708 ptLab=0.102715 phiLab=-0.577841 ptStar=0.0601461 etaStar=3.06852 phiStar=-0.410513 ptStar2=0.0651185 etaStar2=2.92596 phiStar2=-0.37751 log10(z)=-1.80437 chi2vtx=0.347656 chi2nv=-1
+13 Track 13 1 etaLab=-1.69732 ptLab=0.148698 phiLab=1.26079 ptStar=0.711452 etaStar=3.25087 phiStar=-2.95751 ptStar2=0.637312 etaStar2=3.29928 phiStar2=-2.9358 log10(z)=-0.657171 chi2vtx=41.0938 chi2nv=-1
+14 Track 14 3 etaLab=2.22313 ptLab=0.283579 phiLab=1.22341 ptStar=0.297541 etaStar=1.00953 phiStar=-2.12311 ptStar2=0.295749 etaStar2=0.951015 phiStar2=-2.1132 log10(z)=-1.99837 chi2vtx=2.52734 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-1.957629,2.071729,-25.638442,25.796396) (P,eta,phi,E)=(25.796396,-2.892881,2.327885,25.796396)
+reconstructed electron with photons in lab: (x,y,z,t)=(-1.957629,2.071729,-25.638442,25.796396) (P,eta,phi,E)=(25.796396,-2.892881,2.327885,25.796396)
+ 0 14 0 1 0 0 0 0 0 0
+440000 event 492666 40202 type=0 weight=1
+HERA beam energies: 27.612 919.144 beam tilt: -0.000642297 0.000724106
+ivtyp=1 beam spot: 0.317817 0.638861 reconstructed primary vertex: 0.323601 0.633362 -7.61768
+number of part cand: 38
+1 Track 0 1 etaLab=-1.80875 ptLab=0.107226 phiLab=-2.36458 ptStar=2.67934 etaStar=1.98456 phiStar=3.13218 ptStar2=2.95922 etaStar2=1.93482 phiStar2=3.13307 log10(z)=-0.510557 chi2vtx=3.48242 chi2nv=-1
+37 Track 1 4 etaLab=2.9229 ptLab=0.681155 phiLab=0.414049 ptStar=0.538553 etaStar=0.692399 phiStar=0.159132 ptStar2=0.5231 etaStar2=0.772023 phiStar2=0.163875 log10(z)=-1.76279 chi2vtx=0.122271 chi2nv=1.345
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-7.157566,-4.287207,-25.850222,27.163300) (P,eta,phi,E)=(27.163300,-1.849087,-2.601927,27.163300)
+reconstructed electron with photons in lab: (x,y,z,t)=(-7.157566,-4.287207,-25.850222,27.163300) (P,eta,phi,E)=(27.163300,-1.849087,-2.601927,27.163300)
+ 0 1 0 0 1 0 0 0 0 0
+450000 event 492666 185080 type=0 weight=1
+HERA beam energies: 27.612 919.144 beam tilt: -0.00064928 0.000725478
+ivtyp=0 beam spot: 0.320459 0.638726 reconstructed primary vertex: 0.320543 0.638631 -0.13
+number of part cand: 5
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.671751,4.318361,-28.280178,28.615870) (P,eta,phi,E)=(28.615870,-2.566395,1.416476,28.615870)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.671751,4.318361,-28.280178,28.615870) (P,eta,phi,E)=(28.615870,-2.566395,1.416476,28.615870)
+ 0 0 0 0 0 0 0 0 0 0
+460000 event 492667 141731 type=0 weight=1
+HERA beam energies: 27.612 919.125 beam tilt: -0.000656014 0.0007268
+ivtyp=4 beam spot: 0.323998 0.63849 reconstructed primary vertex: 0.265823 0.719414 85.1851
+number of part cand: 9
+reconstructed electron w/o photons in lab: (x,y,z,t)=(0.816109,3.121414,-27.696821,27.884102) (P,eta,phi,E)=(27.884102,-2.846492,1.315066,27.884102)
+reconstructed electron with photons in lab: (x,y,z,t)=(0.816109,3.121414,-27.696821,27.884102) (P,eta,phi,E)=(27.884102,-2.846492,1.315066,27.884102)
+ 0 0 0 0 0 0 0 0 0 0
+480000 event 492691 11772 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000670695 0.00072655
+ivtyp=1 beam spot: 0.299606 0.641342 reconstructed primary vertex: 0.292923 0.636139 -6.94446
+number of part cand: 31
+0 Track 0 -1 etaLab=-0.962218 ptLab=0.929467 phiLab=1.92829 ptStar=0.840953 etaStar=3.05136 phiStar=0.676181 ptStar2=0.847497 etaStar2=3.0227 phiStar2=0.67 log10(z)=-1.15174 chi2vtx=0.0664062 chi2nv=-1
+1 Track 1 -1 etaLab=0.319016 ptLab=0.256918 phiLab=-1.82515 ptStar=0.260568 etaStar=1.81276 phiStar=-1.96367 ptStar2=0.26028 etaStar2=1.79265 phiStar2=-1.96099 log10(z)=-2.19534 chi2vtx=0.691406 chi2nv=-1
+2 Track 2 1 etaLab=-0.590446 ptLab=0.460352 phiLab=1.7923 ptStar=0.432766 etaStar=2.65903 phiStar=0.797512 ptStar2=0.434804 etaStar2=2.63341 phiStar2=0.792722 log10(z)=-1.61045 chi2vtx=0.498047 chi2nv=-1
+3 Track 3 -1 etaLab=-0.218241 ptLab=0.383549 phiLab=-1.39283 ptStar=0.399936 etaStar=2.21045 phiStar=-2.40002 ptStar2=0.39867 etaStar2=2.19265 phiStar2=-2.39711 log10(z)=-1.83912 chi2vtx=2.17773 chi2nv=-1
+4 Track 4 -1 etaLab=-1.08549 ptLab=0.279456 phiLab=-1.27912 ptStar=0.310442 etaStar=2.99078 phiStar=-2.55034 ptStar2=0.308031 etaStar2=2.97765 phiStar2=-2.54508 log10(z)=-1.61065 chi2vtx=18 chi2nv=-1
+5 Track 5 1 etaLab=-1.9382 ptLab=0.447902 phiLab=1.58953 ptStar=0.382257 etaStar=4.08488 phiStar=1.24285 ptStar2=0.385835 etaStar2=4.05465 phiStar2=1.21661 log10(z)=-1.04532 chi2vtx=0.355469 chi2nv=-1
+6 Track 6 -1 etaLab=-2.02496 ptLab=0.109084 phiLab=2.82495 ptStar=0.073245 etaStar=4.43597 phiStar=-0.44742 ptStar2=0.0758812 etaStar2=4.37969 phiStar2=-0.430814 log10(z)=-1.61021 chi2vtx=4.11719 chi2nv=-1
+7 Track 7 -3 etaLab=2.34863 ptLab=0.230621 phiLab=-2.73106 ptStar=0.229917 etaStar=-0.241971 phiStar=-1.02694 ptStar2=0.229971 etaStar2=-0.266402 phiStar2=-1.02656 log10(z)=-3.06209 chi2vtx=0.745117 chi2nv=-1
+30 Track 8 4 etaLab=2.51301 ptLab=0.0792164 phiLab=-0.229907 ptStar=0.0803003 etaStar=0.309658 phiStar=2.76552 ptStar2=0.0802179 etaStar2=0.269708 phiStar2=2.76511 log10(z)=-3.12697 chi2vtx=1.5645 chi2nv=0.652344
+31 Track 9 -4 etaLab=2.79948 ptLab=0.119611 phiLab=1.97496 ptStar=0.118955 etaStar=-0.577637 phiStar=0.558668 ptStar2=0.119005 etaStar2=-0.607226 phiStar2=0.558407 log10(z)=-3.30608 chi2vtx=6.67543 chi2nv=1.99023
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.279740,-0.897080,-10.250781,10.369233) (P,eta,phi,E)=(10.369233,-2.579754,-0.611388,10.369233)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.279740,-0.897080,-10.250781,10.369233) (P,eta,phi,E)=(10.369233,-2.579754,-0.611388,10.369233)
+ 0 7 0 1 2 0 0 0 0 0
+490000 event 492691 168959 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000668741 0.000726986
+ivtyp=0 beam spot: 0.30285 0.641035 reconstructed primary vertex: 0.303051 0.640817 -0.3
+number of part cand: 8
+ 0 0 0 0 0 0 0 0 0 0
+500000 event 492692 70034 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000666914 0.000727394
+ivtyp=1 beam spot: 0.309224 0.640769 reconstructed primary vertex: 0.313889 0.635605 -7.18735
+number of part cand: 40
+ 0 0 0 0 0 0 0 0 0 0
+520000 event 492692 290757 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000663678 0.000728116
+ivtyp=1 beam spot: 0.315039 0.64035 reconstructed primary vertex: 0.317215 0.643242 3.62396
+number of part cand: 44
+0 Track 0 -1 etaLab=-0.702355 ptLab=3.44333 phiLab=2.23574 ptStar=1.41423 etaStar=4.05253 phiStar=-0.93364 ptStar2=1.36323 etaStar2=4.10489 phiStar2=-0.986064 log10(z)=-0.285013 chi2vtx=0.828125 chi2nv=-1
+1 Track 1 1 etaLab=-1.15747 ptLab=0.798177 phiLab=1.36444 ptStar=0.451458 etaStar=4.19003 phiStar=2.01907 ptStar2=0.46649 etaStar2=4.17292 phiStar2=2.082 log10(z)=-0.721189 chi2vtx=11.1484 chi2nv=-1
+2 Track 2 1 etaLab=-1.12933 ptLab=0.216642 phiLab=1.70494 ptStar=0.0506065 etaStar=5.08046 phiStar=2.16816 ptStar2=0.0560919 etaStar2=4.9932 phiStar2=2.29961 log10(z)=-1.28477 chi2vtx=0.388672 chi2nv=-1
+3 Track 3 -1 etaLab=1.1576 ptLab=0.401997 phiLab=1.03935 ptStar=0.372156 etaStar=1.47578 phiStar=0.95892 ptStar2=0.371131 etaStar2=1.49437 phiStar2=0.962868 log10(z)=-1.98087 chi2vtx=0.585938 chi2nv=-1
+4 Track 4 1 etaLab=1.89933 ptLab=0.126808 phiLab=0.693654 ptStar=0.122464 etaStar=1.28109 phiStar=1.31399 ptStar2=0.122332 etaStar2=1.30025 phiStar2=1.31813 log10(z)=-2.51525 chi2vtx=0.621094 chi2nv=-1
+5 Track 5 3 etaLab=2.17325 ptLab=0.140112 phiLab=-1.41029 ptStar=0.150841 etaStar=0.760615 phiStar=-2.98564 ptStar2=0.151237 etaStar2=0.777236 phiStar2=-2.98605 log10(z)=-2.63057 chi2vtx=4.35156 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.498109,-4.395127,-20.652344,21.167919) (P,eta,phi,E)=(21.167919,-2.197927,-1.242290,21.167919)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.498109,-4.395127,-20.652344,21.167919) (P,eta,phi,E)=(21.167919,-2.197927,-1.242290,21.167919)
+ 0 5 0 1 0 0 0 0 0 0
+530000 event 492693 113811 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000661679 0.000728562
+ivtyp=1 beam spot: 0.319909 0.640119 reconstructed primary vertex: 0.36846 0.586609 -73.5493
+number of part cand: 2
+0 Track 0 1 etaLab=-0.251251 ptLab=0.0962684 phiLab=-2.32314 ptStar=0.112723 etaStar=2.73305 phiStar=2.46592 ptStar2=1.24836 etaStar2=2.17791 phiStar2=3.08509 log10(z)=-2.07253 chi2vtx=1.46355 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-2.647231,0.008639,-15.934777,16.153173) (P,eta,phi,E)=(16.153173,-2.494961,3.138329,16.153173)
+reconstructed electron with photons in lab: (x,y,z,t)=(-2.647231,0.008639,-15.934777,16.153173) (P,eta,phi,E)=(16.153173,-2.494961,3.138329,16.153173)
+ 0 1 0 0 0 0 0 0 0 0
+540000 event 492693 229385 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000660077 0.00072892
+ivtyp=1 beam spot: 0.319838 0.63995 reconstructed primary vertex: 0.315384 0.643715 5.12909
+number of part cand: 37
+0 Track 0 1 etaLab=1.79874 ptLab=0.934626 phiLab=-0.509076 ptStar=0.950114 etaStar=0.554848 phiStar=2.87574 ptStar2=0.94821 etaStar2=0.503221 phiStar2=2.87519 log10(z)=-2.02101 chi2vtx=4.14062 chi2nv=-1
+1 Track 1 -1 etaLab=-0.520047 ptLab=0.259955 phiLab=0.539228 ptStar=0.275717 etaStar=2.88332 phiStar=1.99096 ptStar2=0.273383 etaStar2=2.83855 phiStar2=1.97141 log10(z)=-1.54904 chi2vtx=9.33594 chi2nv=-1
+2 Track 2 1 etaLab=0.453428 ptLab=0.491782 phiLab=-2.74285 ptStar=0.479947 etaStar=1.97815 phiStar=-1.24282 ptStar2=0.48129 etaStar2=1.922 phiStar2=-1.23471 log10(z)=-1.70108 chi2vtx=0.958984 chi2nv=-1
+3 Track 3 -1 etaLab=-0.878995 ptLab=0.88329 phiLab=-2.08655 ptStar=0.962917 etaStar=3.15017 phiStar=-2.05381 ptStar2=0.950827 etaStar2=3.10961 phiStar2=-2.02898 log10(z)=-0.890355 chi2vtx=0.388672 chi2nv=-1
+5 Track 4 -1 etaLab=1.24945 ptLab=0.46368 phiLab=1.8878 ptStar=0.450712 etaStar=1.2049 phiStar=0.48918 ptStar2=0.4523 etaStar2=1.1474 phiStar2=0.487312 log10(z)=-2.06148 chi2vtx=5.91016 chi2nv=-1
+7 Track 5 1 etaLab=1.27596 ptLab=0.288424 phiLab=0.648536 ptStar=0.290005 etaStar=1.24917 phiStar=1.74752 ptStar2=0.289792 etaStar2=1.19493 phiStar2=1.74338 log10(z)=-2.22969 chi2vtx=1.23438 chi2nv=-1
+8 Track 6 1 etaLab=-1.57084 ptLab=0.499299 phiLab=1.25732 ptStar=0.446541 etaStar=4.03958 phiStar=1.61688 ptStar2=0.446168 etaStar2=3.98722 phiStar2=1.54946 log10(z)=-0.837822 chi2vtx=2.30664 chi2nv=-1
+36 Track 7 -4 etaLab=2.5096 ptLab=0.248166 phiLab=0.449075 ptStar=0.249083 etaStar=-0.026578 phiStar=1.92326 ptStar2=0.248969 etaStar2=-0.0871321 phiStar2=1.92201 log10(z)=-2.79648 chi2vtx=46.6743 chi2nv=0.808584
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.199134,-1.184943,-19.280333,19.353895) (P,eta,phi,E)=(19.353895,-3.131883,-0.779446,19.353895)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.199134,-1.184943,-19.280333,19.353895) (P,eta,phi,E)=(19.353895,-3.131883,-0.779446,19.353895)
+ 2 7 0 0 1 0 0 0 0 0
+550000 event 492693 347973 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000658397 0.000729295
+ivtyp=1 beam spot: 0.32014 0.639785 reconstructed primary vertex: 0.314194 0.647331 10.2477
+number of part cand: 26
+0 Track 0 2 etaLab=1.85545 ptLab=0.417135 phiLab=-2.47219 ptStar=0.38739 etaStar=1.81803 phiStar=-1.47171 ptStar2=0.395389 etaStar2=2.151 phiStar2=-1.79504 log10(z)=-1.36423 chi2vtx=4.35156 chi2nv=-1
+1 Track 1 -1 etaLab=1.56728 ptLab=0.07397 phiLab=-0.0958831 ptStar=0.0981651 etaStar=1.64912 phiStar=2.83399 ptStar2=0.124098 etaStar2=1.76645 phiStar2=2.89974 log10(z)=-2.03522 chi2vtx=8.61719 chi2nv=-1
+25 Track 2 4 etaLab=2.29546 ptLab=2.6336 phiLab=2.46716 ptStar=2.19581 etaStar=1.38825 phiStar=0.198376 ptStar2=1.74316 etaStar2=1.97097 phiStar2=0.250876 log10(z)=-0.798771 chi2vtx=0.371212 chi2nv=0.157175
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.444818,-1.365514,-26.701017,26.847460) (P,eta,phi,E)=(26.847460,-2.950855,-0.509372,26.847460)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.444818,-1.365514,-26.701017,26.847460) (P,eta,phi,E)=(26.847460,-2.950855,-0.509372,26.847460)
+ 0 1 1 0 1 0 0 0 0 0
+560000 event 492694 52172 type=0 weight=1
+HERA beam energies: 27.611 919.144 beam tilt: -0.000656277 0.000729768
+ivtyp=1 beam spot: 0.321075 0.639596 reconstructed primary vertex: 0.329498 0.637543 -1.65813
+number of part cand: 26
+0 Track 0 2 etaLab=1.93408 ptLab=0.784194 phiLab=-1.07677 ptStar=0.813534 etaStar=0.431107 phiStar=2.12472 ptStar2=0.811453 etaStar2=0.404436 phiStar2=2.12056 log10(z)=-2.12809 chi2vtx=1.1582 chi2nv=-1
+1 Track 1 1 etaLab=-0.26205 ptLab=0.601205 phiLab=0.49492 ptStar=0.31088 etaStar=3.32096 phiStar=1.14032 ptStar2=0.323109 etaStar2=3.2535 phiStar2=1.06414 log10(z)=-1.29447 chi2vtx=0.597656 chi2nv=-1
+2 Track 2 1 etaLab=0.441496 ptLab=0.490645 phiLab=0.733172 ptStar=0.330811 etaStar=2.38602 phiStar=0.377176 ptStar2=0.34136 etaStar2=2.32568 phiStar2=0.364964 log10(z)=-1.67299 chi2vtx=0.552734 chi2nv=-1
+3 Track 3 -1 etaLab=-0.530859 ptLab=3.00391 phiLab=1.31725 ptStar=1.01794 etaStar=3.99358 phiStar=-1.3054 ptStar2=1.07657 etaStar2=3.90871 phiStar2=-1.14919 log10(z)=-0.487339 chi2vtx=1.875 chi2nv=-1
+4 Track 4 1 etaLab=0.596155 ptLab=0.449212 phiLab=1.69174 ptStar=0.358365 etaStar=2.0778 phiStar=-0.952406 ptStar2=0.363666 etaStar2=2.03412 phiStar2=-0.932201 log10(z)=-1.77174 chi2vtx=1.12305 chi2nv=-1
+5 Track 5 -1 etaLab=0.460393 ptLab=0.54697 phiLab=0.431674 ptStar=0.403738 etaStar=2.26695 phiStar=0.79083 ptStar2=0.412453 etaStar2=2.21666 phiStar2=0.769695 log10(z)=-1.63828 chi2vtx=1.73438 chi2nv=-1
+6 Track 6 -1 etaLab=-0.196948 ptLab=0.97499 phiLab=1.47983 ptStar=0.529387 etaStar=3.19575 phiStar=-1.06759 ptStar2=0.550145 etaStar2=3.12842 phiStar2=-1.00282 log10(z)=-1.11773 chi2vtx=0.375 chi2nv=-1
+7 Track 7 -1 etaLab=1.00911 ptLab=0.0906516 phiLab=2.99 ptStar=0.117352 etaStar=2.09987 phiStar=-2.36548 ptStar2=0.115178 etaStar2=2.08849 phiStar2=-2.34679 log10(z)=-2.23919 chi2vtx=7.27344 chi2nv=-1
+9 Track 8 -1 etaLab=1.4695 ptLab=0.566928 phiLab=-1.90148 ptStar=0.634304 etaStar=0.846607 phiStar=2.91331 ptStar2=0.629743 etaStar2=0.824572 phiStar2=2.91162 log10(z)=-2.05624 chi2vtx=0.193359 chi2nv=-1
+10 Track 9 1 etaLab=1.6096 ptLab=0.138285 phiLab=0.661674 ptStar=0.112936 etaStar=1.58134 phiStar=0.398472 ptStar2=0.114622 etaStar2=1.53439 phiStar2=0.392288 log10(z)=-2.46507 chi2vtx=0.449219 chi2nv=-1
+11 Track 10 3 etaLab=2.3624 ptLab=1.11891 phiLab=-1.01125 ptStar=1.14215 etaStar=0.00500424 phiStar=2.03835 ptStar2=1.14052 etaStar2=-0.0226523 phiStar2=2.0355 log10(z)=-2.16634 chi2vtx=1.43945 chi2nv=-1
+25 Track 11 -4 etaLab=-2.11747 ptLab=0.0447686 phiLab=1.27063 ptStar=0.167896 etaStar=3.2913 phiStar=-3.06616 ptStar2=0.153743 etaStar2=3.35044 phiStar2=-3.05921 log10(z)=-1.5746 chi2vtx=48.9418 chi2nv=0.00121777
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-4.372857,-6.578132,-18.973224,20.551811) (P,eta,phi,E)=(20.551811,-1.610202,-2.157475,20.551811)
+reconstructed electron with photons in lab: (x,y,z,t)=(-4.372857,-6.578132,-18.973224,20.551811) (P,eta,phi,E)=(20.551811,-1.610202,-2.157475,20.551811)
+ 0 9 1 1 1 0 0 0 0 0
+570000 event 492698 18198 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000653759 0.00073033
+ivtyp=1 beam spot: 0.32011 0.639396 reconstructed primary vertex: 0.307991 0.65313 18.4713
+number of part cand: 56
+0 Track 0 2 etaLab=1.88147 ptLab=1.48105 phiLab=-3.10454 ptStar=1.38448 etaStar=1.32226 phiStar=-0.714599 ptStar2=1.30333 etaStar2=1.69098 phiStar2=-0.769972 log10(z)=-1.18963 chi2vtx=3.00195 chi2nv=-1
+reconstructed electron w/o photons in lab: (x,y,z,t)=(1.569951,-1.126196,-25.813697,25.885904) (P,eta,phi,E)=(25.885904,-3.286835,-0.622272,25.885904)
+reconstructed electron with photons in lab: (x,y,z,t)=(1.569951,-1.126196,-25.813697,25.885904) (P,eta,phi,E)=(25.885904,-3.286835,-0.622272,25.885904)
+ 0 0 1 0 0 0 0 0 0 0
+580000 event 492698 156960 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000651763 0.000730776
+ivtyp=1 beam spot: 0.31797 0.639254 reconstructed primary vertex: 0.32943 0.62635 -17.7312
+number of part cand: 36
+0 Track 0 -2 etaLab=2.08842 ptLab=2.13945 phiLab=0.172712 ptStar=2.0076 etaStar=0.799757 phiStar=0.0484533 ptStar2=1.55792 etaStar2=1.77013 phiStar2=0.0624549 log10(z)=-1.38835 chi2vtx=0.25 chi2nv=-1
+1 Track 1 1 etaLab=2.05139 ptLab=0.293977 phiLab=2.50202 ptStar=0.309432 etaStar=0.889969 phiStar=-2.33981 ptStar2=0.368034 etaStar2=1.45361 phiStar2=-2.49286 log10(z)=-2.14936 chi2vtx=3.41602 chi2nv=-1
+2 Track 2 1 etaLab=1.66567 ptLab=0.456205 phiLab=1.531 ptStar=0.44659 etaStar=1.25584 phiStar=-1.41396 ptStar2=0.450065 etaStar2=1.96971 phiStar2=-1.77063 log10(z)=-1.84025 chi2vtx=1.79688 chi2nv=-1
+5 Track 3 -1 etaLab=2.00255 ptLab=0.211028 phiLab=0.100551 ptStar=0.191028 etaStar=1.23396 phiStar=0.130007 ptStar2=0.123173 etaStar2=2.41847 phiStar2=0.20244 log10(z)=-2.20458 chi2vtx=0.818359 chi2nv=-1
+35 Track 4 4 etaLab=2.47176 ptLab=0.210695 phiLab=-1.02997 ptStar=0.20703 etaStar=0.63942 phiStar=1.30615 ptStar2=0.200123 etaStar2=1.4535 phiStar2=1.51593 log10(z)=-2.40663 chi2vtx=4.11916 chi2nv=0.681507
+reconstructed electron w/o photons in lab: (x,y,z,t)=(-3.151515,-0.698710,-24.249748,24.463657) (P,eta,phi,E)=(24.463657,-2.714079,-2.923416,24.463657)
+reconstructed electron with photons in lab: (x,y,z,t)=(-3.151515,-0.698710,-24.249748,24.463657) (P,eta,phi,E)=(24.463657,-2.714079,-2.923416,24.463657)
+ 3 3 1 0 1 0 0 0 0 0
+590000 event 492698 292106 type=0 weight=1
+HERA beam energies: 27.611 919.125 beam tilt: -0.000649661 0.000731245
+ivtyp=1 beam spot: 0.318214 0.639119 reconstructed primary vertex: 0.328987 0.631317 -10.6331
+number of part cand: 30
+0 Track 0 2 etaLab=2.03973 ptLab=0.181871 phiLab=0.156549 ptStar=0.184809 etaStar=0.334448 phiStar=3.06485 ptStar2=0.185161 etaStar2=0.379891 phiStar2=3.065 log10(z)=-2.87235 chi2vtx=0.130859 chi2nv=-1
+2 Track 1 -1 etaLab=1.1544 ptLab=0.698754 phiLab=-0.810084 ptStar=0.710286 etaStar=0.9565 phiStar=-2.27269 ptStar2=0.711685 etaStar2=0.993338 phiStar2=-2.27501 log10(z)=-2.08477 chi2vtx=0.394531 chi2nv=-1
+3 Track 2 1 etaLab=1.15523 ptLab=0.610066 phiLab=0.116993 ptStar=0.625991 etaStar=0.955642 phiStar=3.10415 ptStar2=0.627897 etaStar2=0.991501 phiStar2=3.10426 log10(z)=-2.13939 chi2vtx=0.273438 chi2nv=-1
+4 Track 3 -1 etaLab=-1.51824 ptLab=0.325998 phiLab=2.5269 ptStar=0.246602 etaStar=3.90218 phiStar=1.00618 ptStar2=0.239296 etaStar2=3.97074 phiStar2=1.05639 log10(z)=-1.267 chi2vtx=1.11914 chi2nv=-1
+5 Track 4 -1 etaLab=-1.55498 ptLab=0.178 phiLab=-0.265118 ptStar=0.243535 etaStar=3.36307 phiStar=-2.89275 ptStar2=0.251483 etaStar2=3.36947 phiStar2=-2.90077 log10(z)=-1.50645 chi2vtx=0.621094 chi2nv=-1
+6 Track 5 1 etaLab=1.75405 ptLab=0.380936 phiLab=1.07659 ptStar=0.384165 etaStar=0.418161 phiStar=2.15647 ptStar2=0.384556 etaStar2=0.457698 phiStar2=2.158 log10(z)=-2.57106 chi2vtx=1.68945 chi2nv=-1
+7 Track 6 -1 etaLab=1.87544 ptLab=0.298411 phiLab=0.575951 ptStar=0.302279 etaStar=0.33443 phiStar=2.65114 ptStar2=0.302742 etaStar2=0.374905 phiStar2=2.65196 log10(z)=-2.69908 chi2vtx=0.294922 chi2nv=-1
+8 Track 7 1 etaLab=-1.89899 ptLab=0.250084 phiLab=-1.61316 ptStar=0.26877 etaStar=3.93025 phiStar=-1.96402 ptStar2=0.275271 etaStar2=3.94484 phiStar2=-2.01752 log10(z)=-1.21743 chi2vtx=0.880859 chi2nv=-1
+9 Track 8 3 etaLab=2.61104 ptLab=0.109856 phiLab=3.05853 ptStar=0.108222 etaStar=-0.0600196 phiStar=0.164092 ptStar2=0.108026 etaStar2=0.00386626 phiStar2=0.164392 log10(z)=-3.1227 chi2vtx=1.7998 chi2nv=-1
+10 Track 9 -3 etaLab=2.27962 ptLab=0.219156 phiLab=3.00312 ptStar=0.21673 etaStar=-0.0107261 phiStar=0.219513 ptStar2=0.21644 etaStar2=0.0361808 phiStar2=0.219812 log10(z)=-2.9464 chi2vtx=3.53516 chi2nv=-1
+11 Track 10 3 etaLab=2.34224 ptLab=0.242923 phiLab=0.380495 ptStar=0.245265 etaStar=-0.130139 phiStar=2.84264 ptStar2=0.245545 etaStar2=-0.086897 phiStar2=2.84299 log10(z)=-2.95234 chi2vtx=0.599609 chi2nv=-1
+29 Track 11 4 etaLab=2.63469 ptLab=0.0707204 phiLab=-1.81155 ptStar=0.0701389 etaStar=0.513086 phiStar=-1.27759 ptStar2=0.0700725 etaStar2=0.590458 phiStar2=-1.28074 log10(z)=-3.05653 chi2vtx=0.236059 chi2nv=3.39648
+30 Track 12 -4 etaLab=2.21752 ptLab=0.477566 phiLab=-1.96075 ptStar=0.475567 etaStar=-0.0802553 phiStar=-1.11065 ptStar2=0.47533 etaStar2=-0.0396817 phiStar2=-1.11165 log10(z)=-2.69203 chi2vtx=19.7799 chi2nv=22.2969
+reconstructed electron w/o photons in lab: (x,y,z,t)=(2.189994,0.172420,-13.650881,13.826509) (P,eta,phi,E)=(13.826509,-2.526375,0.078569,13.826509)
+reconstructed electron with photons in lab: (x,y,z,t)=(2.189994,0.172420,-13.650881,13.826509) (P,eta,phi,E)=(13.826509,-2.526375,0.078569,13.826509)
+ 3 7 1 3 2 0 0 0 0 0
+
+Processed 599188 events
+
+Histograms written to data_highE_07_test_0000-0002.root
+
+________________________________________________________
+H1ErrorHandler Summary
+
+Info messages:
+     2  <H1Tree::SelectHat>: Starting selection "(fRunType>0)||(fIl1ac[0]>0)||(fIl1ac[1]>0)||(fIl1ac[2]>0)||(fIl1ac[3]>0)||(fIl1ac[61]>0)" on 2175039 Events (up to 3  files)...
+
+Warning messages:
+224328  <TVector3::PseudoRapidity>: transvers momentum = 0! return +/- 10e10
+  2345  <H1HelixTrajectory::GetArcLengthAtRadius>: Radius is outside trajectory.
+    90  <H1TrackFiller::FillFSTFittedTracksDST>: 
+ no dver bank found.
+   194  <H1TrackFiller::FillBSTFittedTracksDST>: 
+ no dver bank found.
+    32  <H1TrackFiller::IsCentralPrimaryVertex>: KSFT (FST Track) points to a non-existing vertex in event 492568 81421
+     5  <H1ForwardMuonTrack::H1ForwardMuonTrack>: High momentum muon (p=557.244629), error on momentum changed to 250 pcts
+
+Error messages:
+    15  <H1CentralFittedTrack::H1CentralFittedTrack>: Theta = 213.524172, set 1/pt = 3.40282e+38
+
+(In total 227011 messages at 8 locations logged)
+________________________________________________________
+
+ *NDB('/JOB')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('/JOB')* Database opened at 190328 1553
+ *NDB('/JOB')* H1NDB CMZ version is 1.03/00
+ *NDB('/JOB')* using GNU ZIP with level   1
+ *NDB('/JOB')* NDBCDB current DB: H1 Master Database
+ *NDB('/JOB')* NDBCDB DB type: imported, last update 151008 0232
+ *NDB('/JOB')* NDBCDB MTAC set to    11268047
+ **SPMAPINI(Z_Spacal) data 06-07: Z0MAX,Z1MAX= -152.40 -204.90
+ FIELFUD called for the first time!  DOPRNT= F
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ GUFLD_CJC: called outside CJC region!
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1554
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1554
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1555
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1556
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1557
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1557
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1558
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1558
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1559
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1600
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1601
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1601
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1602
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1603
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1604
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1605
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1606
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1606
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1607
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1608
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1609
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1609
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1610
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1610
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1611
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1611
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1612
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1612
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1613
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1613
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1614
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1614
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1615
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1615
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1616
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1617
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1618
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1620
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1621
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1622
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1623
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1625
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1626
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1627
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1628
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1628
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1629
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1629
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1630
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1631
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1632
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1632
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1633
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1633
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1634
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1635
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1636
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1637
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1638
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1639
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1640
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1640
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1641
+ *NDB('ZEAD')* NDB_READ_ONLY_DP  ok: File opened for READ
+ *NDB('ZEAD')* Database connection resumed at 190328 1641
+ *NDB('DBID')* NDB_READ_ONLY_DP  ok: File closed
+ *NDB('DBID')* Database connection suspended at 190328 1642
+ *NDB('/END')* Connection already closed by idle timeout
+ *NDB('/END')* Database closed at 190328 1642
+ *NDB('/END')* total CPUtime of all NDB():      16.33 secs
+ *NDB('/END')* I/O statistics:            user             system      errors
+ *NDB('/END')* banks/words read       178     18684    309     21419     0
